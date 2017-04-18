@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <div class="post-tags">
+            {% if page.tags.size > 0 %} 
+            {% for tag in page.tags  %}
+            <a href="{{ site.baseurl }}tags/#{{ tag }}" class="post-tag">{{ tag }}</a>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <h1>{{ page.title }}</h1>
+        <div class="post-meta">
+            <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
+            <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+        </div>
+    </div>
+    {% if page.cover %}
+    <div class="filter"></div>
+    <div class="post-cover">
+        <img id="postCover" src="{{ page.cover }}" alt="">
+    </div>
+    {% endif %}
+
+</header>
+
+<div class="post-content">
+    {% if page.subtitle %}
+    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    <article class="markdown-body">
+        {{ page.content }}
+    </article>
+</div>
+
+<section class="author-detail">
+    <section class="author-card">
+        <div class="avatar">
+            <img src="{{ site.baseurl }}{{ site.avatar }}" alt="">
+        </div>
+        <div class="author-name" rel="author">{{ site.author }}</div>
+        <div class="bio">
+            <p>前端开发者，热爱技术&设计，简单乐观爱创造。</p>
+        </div>
+        {% if site.sns.size > 0 %}
+        <ul class="sns-links">
+            {% for s in site.sns %}
+            <li>
+                <a href="{{ s[1] }}" target="_blank">
+                    <i class="iconfont icon-{{ s[0] }}"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </section>
+    <section class="read-next">
+        {% if page.next.url %}
+        <div class="read-next-item">
+            <a href="{{ page.next.url }}" class="read-next-link"></a>
+            <section>
+                <span>{{ page.next.title }}</span>
+                <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.next.cover %}
+            <div class="filter"></div>
+            <img src="{{ page.next.cover }}" alt="">
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if page.previous.url %} 
+        <div class="read-next-item">
+            <a href="{{ page.previous.url }}" class="read-next-link"></a>
+            <section>
+                <span>{{ page.previous.title }}</span>
+                <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.previous.cover %}
+            <div class="filter"></div>
+            <img src="{{ page.previous.cover }}" alt="">
+            {% endif %}
+        </div>
+        {% endif %}
+    </section>
+</div>
+
+{% include footer.html %}
