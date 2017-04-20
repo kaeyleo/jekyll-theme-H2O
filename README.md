@@ -6,17 +6,19 @@ A Flat design, responsive Jekyll theme for your blog.
 
 [My Blog](http://liaokeyu.com/)
 
-![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-ad.png)
+![](assets/img/jekyll-theme-h2o-ad.png)
 
-![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-home.png)
+![](assets/img/jekyll-theme-h2o-home.png)
 
-![](http://on2171g4d.bkt.clouddn.com/m.png)
+![](assets/img/m.png)
 
 ### Features
 
 - Theme color: Blue and Pink
+- SNS Links
 - SEO Title
 - Featured Tags
+- Hero background patterns
 - Fully Responsive for most devices
 
 ### Getting Started
