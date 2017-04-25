@@ -166,8 +166,13 @@
         .article-item {
             padding: 20px 16px;
             margin-bottom: 8px;
+            border-left: none;
+            border-right: none;
             border-radius: 0;
             box-shadow: none;
+            &:first-child {
+                border-top: none;
+            }
             .post-preview {
                 .post-title {
                     font-size: 18px;
@@ -202,6 +207,12 @@
     }
     .post-content {
         padding-top: 20px;
+        .post-subtitle {
+            padding: 8px 0 26px;
+            &:before {
+                height: 0;
+            }
+        }
     }
     .markdown-body {
         padding-bottom: 80px;
