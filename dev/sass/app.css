@@ -710,6 +710,8 @@ a {
     display: none; }
   .pagination .page-num {
     display: none; }
+  .pagination .page-links {
+    border: none; }
   .pagination .page-link {
     width: 56px; } }
 
