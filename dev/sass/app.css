@@ -540,6 +540,8 @@ a {
   width: 720px;
   box-sizing: border-box;
   padding: 0 0 100px; }
+  .markdown-body .highlight {
+    margin: 0 0 16px; }
 
 .author-detail {
   position: relative;

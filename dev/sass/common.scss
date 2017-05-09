@@ -431,6 +431,9 @@
     width: $post-content-w;
     box-sizing: border-box;
     padding: 0 0 100px;
+    .highlight {
+        margin: 0 0 16px;
+    }
 }
 
 .author-detail {
