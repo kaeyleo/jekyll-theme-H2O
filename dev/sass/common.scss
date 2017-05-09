@@ -104,24 +104,26 @@
     position: relative;
     text-align: center;
     overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 38, 55, .16);
     h2, h3{
         position: relative;
         z-index: 1;
         text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     }
     h2 {
-        padding-top: 200px;
+        padding-top: 190px;
         line-height: 38px;
-        font-size: 38px;
-        font-family: 'Merriweather-Light';
-        font-weight: normal;
+        font-size: 42px;
+        font-family: 'Arial', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
         line-height: 52px;
     }
     h3 {
         font-size: 20px;
         font-weight: normal;
-        letter-spacing: 12px;
-        margin-top: 12px;
+        letter-spacing: 10px;
+        margin-top: 8px;
     }
     .header-img {
         display: block;
@@ -131,6 +133,19 @@
         width: 101%;
         z-index: 0;
     }
+}
+
+.banner-theme-default {
+    background: -webkit-linear-gradient(0deg, #3CD5FF, #007AFF);
+    background: -o-linear-gradient(0deg, #3CD5FF, #007AFF);
+    background: -moz-linear-gradient(0deg, #3CD5FF, #007AFF);
+    background: linear-gradient(100deg, #3CD5FF, #007AFF);
+}
+.banner-theme-pink {
+    background: -webkit-linear-gradient(0deg, #FFCE69, #FA709A);
+    background: -o-linear-gradient(0deg, #FFCE69, #FA709A);
+    background: -moz-linear-gradient(0deg, #FFCE69, #FA709A);
+    background: linear-gradient(100deg, #FFCE69, #FA709A);
 }
 
 .themeColor-default {

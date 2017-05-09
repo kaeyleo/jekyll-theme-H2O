@@ -1,13 +1,12 @@
 ---
 layout: default
-header-img: "assets/img/hero.jpg"
-home-title: Stay hungry stay foolish
-description: 简单乐观爱创造
+home-title: H2O Theme For Jekyll
+description: 或许是最漂亮的Jekyll主题
 ---
 
 {% include header.html %}
 
-<div class="g-banner home-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
     {% if page.header-img %}
