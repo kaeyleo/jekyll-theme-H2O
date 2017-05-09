@@ -542,6 +542,12 @@ a {
   padding: 0 0 100px; }
   .markdown-body .highlight {
     margin: 0 0 16px; }
+  .markdown-body ul li, .markdown-body ol li {
+    margin-bottom: 16px; }
+    .markdown-body ul li p, .markdown-body ol li p {
+      margin: 0; }
+      .markdown-body ul li p:first-child, .markdown-body ol li p:first-child {
+        margin-bottom: 0; }
 
 .author-detail {
   position: relative;

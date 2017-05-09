@@ -427,12 +427,24 @@
     }
 }
 
+// Post style
 .markdown-body {
     width: $post-content-w;
     box-sizing: border-box;
     padding: 0 0 100px;
     .highlight {
         margin: 0 0 16px;
+    }
+    ul, ol {
+        li {
+            margin-bottom: 16px;
+            p {
+                margin: 0;
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 
