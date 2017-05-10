@@ -2,9 +2,9 @@
 
 [View Live Demo | 在线预览 →](http://liaokeyu.com/)
 
-![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realhome.jpg)
+![](assets/img/jekyll-theme-h2o-realhome.jpg)
 
-![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realm.png)
+![](assets/img/jekyll-theme-h2o-realm.png)
 
 If you like this theme or using it, please give a ⭐️ for motivation ;)
 
@@ -12,7 +12,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 如果想体验手机浏览效果，可以扫一下二维码：
 
-![](http://on2171g4d.bkt.clouddn.com/lkycom-qrcode.png)
+![](assets/img/1494404591.png)
 
 ### Features 特性
 
