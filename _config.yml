@@ -8,7 +8,7 @@ baseurl: '/'
 # Navigation links
 nav:
   home: '/'
-  tags: '/tags'
+  tags: '/tags.html'
 
 # Author 配置博主信息
 author: '廖柯宇'

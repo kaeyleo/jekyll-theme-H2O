@@ -97,15 +97,17 @@ tags: jekyll 前端开发 设计
 # Navigation links
 nav:
   home: '/'
-  tags: '/tags'
+  tags: '/tags.html'
 ```
 
-导航链接只用写html文件名，它们都是放于根目录下的，如果您自建文件夹，请务必在`exclude` 参数中增加自建文件夹的文件名:
+导航链接需要写上完整的html文件名，它们都是放于根目录下的，如果自建文件夹，请务必在`exclude` 参数中增加自建文件夹的文件名:
 
 ```
 # Build settings
 exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 ```
+
+这样做是为了在Jekyll运行时排除某些文件被复制到运行文件`_site`里去。
 
 #### <span id="sidebar">侧边栏</span>
 
