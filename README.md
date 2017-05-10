@@ -204,7 +204,7 @@ header-img: assets/img/banner.jpg
 
 #### <span id="bg-patterns">头图背景底纹</span>
 
-![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-heroPatterns.png)
+![](assets/img/jekyll-theme-h2o-heroPatterns.png)
 
 在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。六种底纹（电路、食物、云海、钻石等等）供你选择，配置如下：
 
