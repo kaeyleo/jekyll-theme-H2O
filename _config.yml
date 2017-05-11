@@ -16,7 +16,10 @@ nickname: '悟空'
 bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
 avatar: 'assets/img/profile.png'
 
-# theme color
+# Comments
+disqus: true
+
+# theme color 主题皮肤
 theme-color: 'default'  # pink or default
 
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
@@ -29,7 +32,7 @@ sns:
   instagram: '//www.instagram.com/steveliaocn'
   github: '//github.com/kaeyleo'
 
-# Tags
+# Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 

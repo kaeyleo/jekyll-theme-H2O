@@ -539,9 +539,11 @@ a {
 .author-detail {
   position: relative;
   top: -35px; }
-  .author-detail .author-card {
+  .author-detail .author-card, .author-detail .comment {
     width: 720px;
     margin: 0 auto; }
+  .author-detail .comment {
+    margin-bottom: 60px; }
 
 .read-next {
   display: flex;

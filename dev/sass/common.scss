@@ -452,9 +452,12 @@
 .author-detail {
     position: relative;
     top: -35px;
-    .author-card {
+    .author-card, .comment {
         width: $post-content-w;
         margin: 0 auto;
+    }
+    .comment {
+        margin-bottom: 60px;
     }
 }
 
