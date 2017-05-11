@@ -171,15 +171,15 @@ avatar: 'assets/img/avatar.jpg'
 # Tags
 recommend-tags: true 
 recommend-condition-size: 12
+
 ```
 
 Tags配置说明：
 
-       属性      |      参数       |       描述      |
- ----------------|-----------------|-------------- |
-  recommend-tags | `true`, `false` | 是否显示推荐标签 |
-  recommend-condition-size | `12` 或其他数字 | 推荐标签个数限制 |
-  
+ 属性 | 参数 | 描述
+-----|-----|-------
+`recommend-tags` | `true`, `false` | 是否显示推荐标签
+`recommend-condition-size` | `12` 或其他数字 | 推荐标签个数限制
 
 #### 代码高亮
 
@@ -197,11 +197,10 @@ Tags配置说明：
 
 在Markdown中你可以这样写：
 
-```
- ```css
-	p { color: red }
- ```
-```
+
+	 ```css
+		p { color: red }
+	 ```
 
 支持语言：
 
