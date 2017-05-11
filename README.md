@@ -16,14 +16,14 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 ### Features 特性
 
+- Syntax highlighter | 代码高亮
+- Disqus | 支持Disqus评论系统
 - Theme color | 粉蓝两种主题色
-- Social icons | 社交图标
 - Hero background patterns | 头图个性化底纹
-- Sidebar | 侧边栏
+- Fully Responsive for most devices | 响应式设计
+- Social icons | 社交图标
 - SEO Title | SEO标题优化
 - Featured Tags | 文章标签索引
-- Fully Responsive for most devices | 响应式设计
-- Disqus | 支持Disqus评论系统
 
 ### Quick start 快速开始
 
@@ -40,25 +40,26 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 ### Docs 配置文档
 
 - 开始
-	- [站点信息](#site)
-	- [写一篇文章](#write-posts)
+	- [站点信息](#站点信息)
+	- [写一篇文章](#写一篇文章)
 - 组件
-	- [导航](#nav)
-	- [侧边栏](#sidebar)
-	- [社交图标](#sns)
-	- [个人简介](#aboutme)
-	- [标签](#tags)
+	- [导航](#导航)
+	- [侧边栏](#侧边栏)
+	- [社交图标](#社交图标)
+	- [个人简介](#个人简介)
+	- [标签](#标签)
+	- [代码高亮](#代码高亮)
 - 个性化
-	- [主题色](#theme-color)
-	- [头图背景底纹](#bg-patterns)
+	- [主题色](#主题色)
+	- [头图背景底纹](#头图背景底纹)
 - 高级部分
-	- [自定义](#customization)
+	- [自定义](#自定义)
 - 集成服务 
-	- [Disqus](#disqus) [Todo]
+	- [Disqus](#Disqus) [Todo]
 
 You can easily get started by modifying _config.yml
 
-#### <span id="site">站点信息</span>
+#### 站点信息
 
 你可以通用修改 `_config.yml` 文件来轻松的开始搭建自己的博客
 
@@ -74,9 +75,10 @@ baseurl: '/'
 paginate: 6 # 一页放几篇文章
 paginate_path: 'page:num'
 ```
+
 其实大部分参数已经默认配置好了，你只需要通过文档了解它们，然后根据自己的需求去`_config.yml`文件里修改即可。
 
-#### <span id="write-posts">写一篇文章</span>
+#### 写一篇文章
 
 文章一般都放在`_posts`文件夹里，每篇文章的开头都需要设置一些头信息：
 
@@ -92,7 +94,7 @@ tags: jekyll 前端开发 设计
 ---
 ```
 
-#### <span id="nav">导航</span>
+#### 导航
 博客顶部的导航栏信息需要以下面的格式进行配置：
 
 ```
@@ -111,13 +113,13 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 这样做是为了在Jekyll运行时排除某些文件被复制到运行文件`_site`里去。
 
-#### <span id="sidebar">侧边栏</span>
+#### 侧边栏
 
 ![](assets/img/jekyll-theme-h2o-sideBar.png)
 
 侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。 
 
-#### <span id="sns">社交图标</span>
+#### 社交图标
 
 使用阿里的图标管理平台Iconfont整理了一套常用的社交图标用于博客的个人简介上，包括微博、知乎、掘金、简书、Github等十二个网站，并且对鼠标悬停时的样式颜色进行了优化。
 
@@ -149,7 +151,7 @@ UI中国 | `uicn`
 Medium | `medium`
 领英 | `linkedin`
 
-#### <span id="aboutme">个人简介</span>
+#### 个人简介
 
 首页侧边栏和文章页面底部都会显示你的个人简介
 
@@ -161,7 +163,7 @@ bio: '程序员'
 avatar: 'assets/img/avatar.jpg'
 ```
 
-#### <span id="tags">标签</span>
+#### 标签
 
 对侧边栏的标签模块进行相应配置：
 
@@ -173,12 +175,49 @@ recommend-condition-size: 12
 
 Tags配置说明：
 
-         属性      |      参数       |       描述
- -----------------|-----------------|--------------
-  `recommend-tags` | `true`, `false` | 是否显示推荐标签
-  `recommend-condition-size` | `12` 或其他数字 | 推荐标签个数限制
+       属性      |      参数       |       描述      |
+ ----------------|-----------------|-------------- |
+  recommend-tags | `true`, `false` | 是否显示推荐标签 |
+  recommend-condition-size | `12` 或其他数字 | 推荐标签个数限制 |
+  
 
-#### <span id="theme-color">主题色</span>
+#### 代码高亮
+
+模板引入了[Prism.js](http://prismjs.com)，一款轻量、可扩展的代码语法高亮库。
+
+很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，就连 JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
+
+![代码高亮](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png)
+
+遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
+
+```
+<pre><code class="language-css">p { color: red }</code></pre>
+```
+
+在Markdown中你可以这样写：
+
+```
+ ```css
+	p { color: red }
+ ```
+```
+
+支持语言：
+
+- HTML
+- CSS
+- Sass
+- JavaScript
+- CoffeeScript
+- Java
+- C-like
+- Swift
+- PHP
+- Go
+- Python
+
+#### 主题色
 
 ![](assets/img/jekyll-theme-h2o-themecolor.jpg)
 
@@ -207,7 +246,7 @@ header-img: assets/img/banner.jpg
 ---
 ```
 
-#### <span id="bg-patterns">头图背景底纹</span>
+#### 头图背景底纹
 
 ![](assets/img/jekyll-theme-h2o-heroPatterns.png)
 
@@ -229,7 +268,7 @@ postPatterns: 'circuitBoard'
 圈圈叉叉 | `ticTacToe`
 中国风：云海 | `seaOfClouds` 
 
-#### <span id="customization">自定义</span>
+#### 自定义
 
 主题开发使用的技术栈也比较简单：引入jQuery类库、使用Sass代替CSS编写样式，使用Gulp完成Sass的编译、CSS和JavaScript的代码合并压缩等任务。
 
@@ -275,7 +314,7 @@ postPatterns: 'circuitBoard'
 
 值得注意的是，css及js的源码都在 `dev` 文件夹中，每一次保存 gulp 都会对它们进行处理并保存到 `assets` 文件夹以供 `_site` 上线环境使用。
 
-#### <span id="disqus">Disqus</span>
+#### Disqus
 
 待完成...
 

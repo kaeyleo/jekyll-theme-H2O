@@ -215,9 +215,6 @@
                 float: left;
                 display: inline-block;
             }
-            .post-tag {
-                @include tagStyle;
-            }
             .post-date {
                 float: right;
                 color: #A9B0BC;
@@ -231,9 +228,8 @@
     @include authorCard;
 }
 
-.tag {
+.article-item .post-meta .post-tag, .tags-card .tag, .tags-content .tag{
     @include tagStyle;
-    margin-bottom: 8px;
 }
 
 .g-sidebar {
@@ -243,12 +239,16 @@
     section {
         padding: 30px 0;
         border-bottom: 1px solid #E7EAF1;
+
         &:first-child {
             padding-top: 0;
         }
         &:last-child {
             border-bottom: 0;
             padding-bottom: 0;
+        }
+        .tag {
+            margin-bottom: 8px;
         }
     }
 }
@@ -412,7 +412,7 @@
     width: 100%;
     background-color: #fff;
     overflow: hidden;
-    padding-top: 40px;
+    padding-top: 32px;
     .post-subtitle {
         position: relative;
         width: $post-content-w;
@@ -447,20 +447,6 @@
     width: $post-content-w;
     box-sizing: border-box;
     padding: 0 0 100px;
-    .highlight {
-        margin: 0 0 16px;
-    }
-    ul, ol {
-        li {
-            margin-bottom: 16px;
-            p {
-                margin: 0;
-                &:first-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
 }
 
 .author-detail {

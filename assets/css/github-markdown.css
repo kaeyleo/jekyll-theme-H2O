@@ -181,6 +181,15 @@
   margin: 0 auto;
 }
 
+.markdown-body img {
+  display: block;
+  margin: 32px auto;
+  max-width: 100%;
+  background-color: #fff;
+  border-style: none;
+  box-sizing: content-box;
+}
+
 .markdown-body svg:not(:root) {
   overflow: hidden;
 }
@@ -271,18 +280,20 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .markdown-body h1 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
 }
 
 .markdown-body h2 {
   font-size: 24px;
   font-weight: 600;
+  margin-top: 40px;
 }
 
 .markdown-body h3 {
@@ -306,15 +317,21 @@
 }
 
 .markdown-body p {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.8;
   text-align: justify;
 }
 
 .markdown-body blockquote {
   margin: 0;
+}
+
+.markdown-body ul {
+  list-style: disc;
+}
+.markdown-body ul ul {
+  list-style: circle;
 }
 
 .markdown-body ul,
@@ -338,17 +355,6 @@
 
 .markdown-body dd {
   margin-left: 0;
-}
-
-.markdown-body code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-}
-
-.markdown-body pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  font: 12px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .markdown-body .octicon {
@@ -418,7 +424,6 @@
   outline: none;
 }
 
-.markdown-body p,
 .markdown-body blockquote,
 .markdown-body ul,
 .markdown-body ol,
@@ -465,7 +470,7 @@
   box-shadow: inset 0 -1px 0 #959da5;
 }
 
-.markdown-body h1,
+/*.markdown-body h1,
 .markdown-body h2,
 .markdown-body h3,
 .markdown-body h4,
@@ -475,7 +480,7 @@
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
-}
+}*/
 
 .markdown-body h1 .octicon-link,
 .markdown-body h2 .octicon-link,
@@ -598,76 +603,13 @@
   background-color: #f6f8fa;
 }
 
-.markdown-body img {
-  max-width: 100%;
-  box-sizing: content-box;
-  background-color: #fff;
-}
-
-.markdown-body code {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+.markdown-body p code {
+  padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   background-color: rgba(27,31,35,0.05);
   border-radius: 3px;
-}
-
-.markdown-body code::before,
-.markdown-body code::after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
-}
-
-.markdown-body pre {
-  word-wrap: normal;
-}
-
-.markdown-body pre>code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-
-.markdown-body .highlight {
-  margin-bottom: 16px;
-}
-
-.markdown-body .highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-
-.markdown-body .highlight pre,
-.markdown-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f6f8fa;
-  border-radius: 3px;
-}
-
-.markdown-body pre code {
-  display: inline;
-  max-width: auto;
-  padding: 0;
-  margin: 0;
-  overflow: visible;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
-}
-
-.markdown-body pre code::before,
-.markdown-body pre code::after {
-  content: normal;
 }
 
 .markdown-body .full-commit .btn-outline:not(:disabled):hover {

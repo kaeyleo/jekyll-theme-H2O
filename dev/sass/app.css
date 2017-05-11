@@ -233,26 +233,6 @@ a {
       .article-list .article-item .post-meta .post-tags {
         float: left;
         display: inline-block; }
-      .article-list .article-item .post-meta .post-tag {
-        display: inline-block;
-        width: auto;
-        height: 22px;
-        padding: 0 8px;
-        font-size: 14px;
-        color: #A6ABB2;
-        font-family: -apple-system, Verdana, "PingFang SC", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-        line-height: 22px;
-        box-sizing: border-box;
-        box-shadow: 0 0 .6px #D5DAE1;
-        border-radius: 2px;
-        background-color: #FAFAFA;
-        cursor: pointer;
-        margin-right: 2px;
-        transition: .2s; }
-        .article-list .article-item .post-meta .post-tag:last-child {
-          margin-right: 0; }
-        .article-list .article-item .post-meta .post-tag:hover {
-          color: #83888F; }
       .article-list .article-item .post-meta .post-date {
         float: right;
         color: #A9B0BC;
@@ -335,7 +315,7 @@ a {
       .author-card .sns-links li .icon-medium:hover {
         color: #0BE370; }
 
-.tag {
+.article-item .post-meta .post-tag, .tags-card .tag, .tags-content .tag {
   display: inline-block;
   width: auto;
   height: 22px;
@@ -350,11 +330,10 @@ a {
   background-color: #FAFAFA;
   cursor: pointer;
   margin-right: 2px;
-  transition: .2s;
-  margin-bottom: 8px; }
-  .tag:last-child {
+  transition: .2s; }
+  .article-item .post-meta .post-tag:last-child, .tags-card .tag:last-child, .tags-content .tag:last-child {
     margin-right: 0; }
-  .tag:hover {
+  .article-item .post-meta .post-tag:hover, .tags-card .tag:hover, .tags-content .tag:hover {
     color: #83888F; }
 
 .g-sidebar {
@@ -374,6 +353,8 @@ a {
     .g-sidebar section:last-child {
       border-bottom: 0;
       padding-bottom: 0; }
+    .g-sidebar section .tag {
+      margin-bottom: 8px; }
 
 .pagination {
   float: left;
@@ -525,7 +506,7 @@ a {
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-  padding-top: 40px; }
+  padding-top: 32px; }
   .post-content .post-subtitle {
     position: relative;
     width: 720px;
@@ -554,14 +535,6 @@ a {
   width: 720px;
   box-sizing: border-box;
   padding: 0 0 100px; }
-  .markdown-body .highlight {
-    margin: 0 0 16px; }
-  .markdown-body ul li, .markdown-body ol li {
-    margin-bottom: 16px; }
-    .markdown-body ul li p, .markdown-body ol li p {
-      margin: 0; }
-      .markdown-body ul li p:first-child, .markdown-body ol li p:first-child {
-        margin-bottom: 0; }
 
 .author-detail {
   position: relative;
