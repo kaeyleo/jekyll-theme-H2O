@@ -1,6 +1,6 @@
 # H2O
 
-[View Live Demo | 在线预览 →](http://liaokeyu.com/)
+[在线预览 →](http://liaokeyu.com/)
 
 ![](assets/img/jekyll-theme-h2o-realhome.jpg)
 
@@ -14,18 +14,18 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 ![](assets/img/1494404591.png)
 
-### Features 特性
+### 特性
 
-- Syntax highlighter | 代码高亮
-- Disqus | 支持Disqus评论系统
-- Theme color | 粉蓝两种主题色
-- Hero background patterns | 头图个性化底纹
-- Fully Responsive for most devices | 响应式设计
-- Social icons | 社交图标
-- SEO Title | SEO标题优化
-- Featured Tags | 文章标签索引
+- 代码高亮
+- 支持Disqus评论系统
+- 粉蓝两种主题色
+- 头图个性化底纹
+- 响应式设计
+- 社交图标
+- SEO标题优化
+- 文章标签索引
 
-### Quick start 快速开始
+### 快速开始
 
 首先你需要安装Jekyll，请查看文档: [快速指南](http://jekyll.com.cn/docs/quickstart/)
 
@@ -37,7 +37,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 最后，在命令行输入 ```jekyll server``` 开启服务，就能在本地预览主题了。
 
-### Docs 配置文档
+### 配置文档
 
 - 开始
 	- [站点信息](#站点信息)
@@ -50,8 +50,8 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 	- [标签](#标签)
 	- [代码高亮](#代码高亮)
 - 个性化
-	- [主题色](#主题色)
-	- [头图背景底纹](#头图背景底纹)
+	- [主题皮肤](#主题皮肤)
+	- [头图底纹](#头图底纹)
 - 高级部分
 	- [自定义](#自定义)
 - 集成服务 
@@ -217,7 +217,7 @@ Tags配置说明：
 - Go
 - Python
 
-#### 主题色
+#### 主题皮肤
 
 ![](assets/img/jekyll-theme-h2o-themecolor.jpg)
 
@@ -246,7 +246,7 @@ header-img: assets/img/banner.jpg
 ---
 ```
 
-#### 头图背景底纹
+#### 头图底纹
 
 ![](assets/img/jekyll-theme-h2o-heroPatterns.png)
 
@@ -276,7 +276,7 @@ postPatterns: 'circuitBoard'
 
 在了解H2O主题的目录结构之前，确保你对[Jekyll目录结构](http://jekyll.com.cn/docs/structure/)有所了解。
 
-
+```		
 	.
 	├── _config.yml # 配置文件
 	├── _includes # 页面组件方便重用
@@ -310,7 +310,7 @@ postPatterns: 'circuitBoard'
 	└── tags.html # 标签页面
 	└── 404.html # 404页面
 	└── package.json # 管理项目的依赖项
-
+```
 
 值得注意的是，css及js的源码都在 `dev` 文件夹中，每一次保存 gulp 都会对它们进行处理并保存到 `assets` 文件夹以供 `_site` 上线环境使用。
 
@@ -318,12 +318,12 @@ postPatterns: 'circuitBoard'
 
 待完成...
 
-### Contributing 贡献
+### 贡献
 
 Any types of contribution are welcome. Thanks.
 
 接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 ```Pull Request```
 
-### License 许可证
+### 许可证
 
 Jekyll-Theme-H2O is licensed under [MIT](https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/LICENSE).
