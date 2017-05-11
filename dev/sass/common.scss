@@ -308,7 +308,7 @@
     }
 }
 
-.post-header, .markdown-body, .post-wrapper, .author-detail {
+.post-header, .markdown-body, .post-wrapper, .author-detail, .social-share-wrapper {
     margin: 0 auto;
 }
 .post-wrapper {
@@ -412,7 +412,7 @@
     width: 100%;
     background-color: #fff;
     overflow: hidden;
-    padding-top: 32px;
+    padding: 40px 0 80px;
     .post-subtitle {
         position: relative;
         width: $post-content-w;
@@ -446,16 +446,34 @@
 .markdown-body {
     width: $post-content-w;
     box-sizing: border-box;
-    padding: 0 0 100px;
+    padding: 0 0 32px;
+    .highlight {
+        margin: 0 0 16px;
+    }
+    ul, ol {
+        li {
+            p {
+                margin: 0;
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.social-share-wrapper {
+    width: $post-content-w;
+}
+
+.post-footer-item {
+    margin: 0 auto;
+    width: $post-content-w;
 }
 
 .author-detail {
     position: relative;
     top: -35px;
-    .author-card, .comment {
-        width: $post-content-w;
-        margin: 0 auto;
-    }
     .comment {
         margin-bottom: 60px;
     }

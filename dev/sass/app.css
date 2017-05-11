@@ -401,7 +401,7 @@ a {
       .g-footer section a:hover {
         color: #83888F; }
 
-.post-header, .markdown-body, .post-wrapper, .author-detail {
+.post-header, .markdown-body, .post-wrapper, .author-detail, .social-share-wrapper {
   margin: 0 auto; }
 
 .post-wrapper {
@@ -506,7 +506,7 @@ a {
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-  padding-top: 32px; }
+  padding: 40px 0 80px; }
   .post-content .post-subtitle {
     position: relative;
     width: 720px;
@@ -534,14 +534,24 @@ a {
 .markdown-body {
   width: 720px;
   box-sizing: border-box;
-  padding: 0 0 100px; }
+  padding: 0 0 32px; }
+  .markdown-body .highlight {
+    margin: 0 0 16px; }
+  .markdown-body ul li p, .markdown-body ol li p {
+    margin: 0; }
+    .markdown-body ul li p:first-child, .markdown-body ol li p:first-child {
+      margin-bottom: 0; }
+
+.social-share-wrapper {
+  width: 720px; }
+
+.post-footer-item {
+  margin: 0 auto;
+  width: 720px; }
 
 .author-detail {
   position: relative;
   top: -35px; }
-  .author-detail .author-card, .author-detail .comment {
-    width: 720px;
-    margin: 0 auto; }
   .author-detail .comment {
     margin-bottom: 60px; }
 
@@ -727,6 +737,8 @@ a {
           font-weight: bold;
           color: #A5A8B0;
           opacity: 1; }
+  .social-share-wrapper {
+    width: 92%; }
   .author-detail .author-card .sns-links {
     margin-top: 24px; }
     .author-detail .author-card .sns-links li {
@@ -735,6 +747,8 @@ a {
       .author-detail .author-card .sns-links li .iconfont {
         font-size: 32px;
         line-height: 40px; }
+  .author-detail .comment {
+    width: 90%; }
   .read-next {
     display: block; }
   .read-next-item {
@@ -816,9 +830,7 @@ a {
     .post-content .post-subtitle {
       padding: 8px 0 26px; }
       .post-content .post-subtitle:before {
-        height: 0; }
-  .markdown-body {
-    padding-bottom: 80px; } }
+        height: 0; } }
 
 @media screen and (max-width: 376px) {
   .home-banner h2 {

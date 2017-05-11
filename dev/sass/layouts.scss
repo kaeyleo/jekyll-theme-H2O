@@ -74,6 +74,10 @@
         }
     }
 
+    .social-share-wrapper {
+        width: 92%;;
+    }
+
     .author-detail {
         .author-card {
             .sns-links {
@@ -87,6 +91,9 @@
                     }
                 }
             }
+        }
+        .comment {
+            width: 90%;
         }
     }
 
@@ -217,9 +224,6 @@
                 height: 0;
             }
         }
-    }
-    .markdown-body {
-        padding-bottom: 80px;
     }
 }
 @media screen and (max-width: 376px) { 

@@ -35,10 +35,15 @@ layout: default
     <article class="markdown-body">
         {{ page.content }}
     </article>
+    {% if site.social-share %}
+    <div class="social-share-wrapper">
+        <div class="social-share"></div>
+    </div>
+    {% endif %}
 </div>
 
 <section class="author-detail">
-    <section class="author-card">
+    <section class="post-footer-item author-card">
         <div class="avatar">
             <img src="{{ site.baseurl }}{{ site.avatar }}" alt="">
         </div>
@@ -58,7 +63,7 @@ layout: default
         </ul>
         {% endif %}
     </section>
-    <section class="read-next">
+    <section class="post-footer-item read-next">
         {% if page.next.url %}
         <div class="read-next-item">
             <a href="{{ page.next.url }}" class="read-next-link"></a>
@@ -87,11 +92,15 @@ layout: default
         {% endif %}
     </section>
     {% if site.disqus %}
-    <section class="comment">
+    <section class="post-footer-item comment">
         <div id="disqus_thread"></div>
     </section>
     {% endif %}
 </div>
+<script src="{{ site.baseurl }}assets/js/social-share.min.js"></script>
+<script>
+    socialShare('.social-share', {sites: [{% for i in site.social-share-items %}'{{ i }}',{% endfor %}]});
+</script>
 <script>
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.

@@ -1,4 +1,4 @@
-# H2O
+## H2O
 
 [在线预览 →](http://liaokeyu.com/)
 
@@ -55,7 +55,8 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 - 高级部分
 	- [自定义](#自定义)
 - 集成服务 
-	- [Disqus](#Disqus) [Todo]
+	- [Disqus](#Disqus)
+	- [Share.js](#Share.js)
 
 You can easily get started by modifying _config.yml
 
@@ -95,6 +96,7 @@ tags: jekyll 前端开发 设计
 ```
 
 #### 导航
+
 博客顶部的导航栏信息需要以下面的格式进行配置：
 
 ```
@@ -315,7 +317,24 @@ postPatterns: 'circuitBoard'
 
 #### Disqus
 
-待完成...
+[Disqus](https://disqus.com/)是一个第三方社交评论插件，体验相当不错。
+
+模板默认开启Disqus评论插件，如需关闭请在 `_config.yml` 中配置参数 `true` (开启) 或者 `false` (关闭) :
+
+```
+# Comments
+disqus: true
+```
+
+#### Share.js
+
+为了让文章更方便地分享，使用了第三方分享插件[Share.js](http://overtrue.me/share.js/)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。
+
+```
+# Share
+social-share: true # 开启或者关闭分享功能
+social-share-items: ['wechat', 'weibo', 'douban','twitter']
+```
 
 ### 贡献
 
