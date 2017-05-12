@@ -463,7 +463,13 @@
 }
 
 .social-share-wrapper {
-    width: $post-content-w;
+    float: left;
+    position: relative;
+    left: 50%;
+    .social-share {
+        position: relative;
+        left: -50%;
+    }
 }
 
 .post-footer-item {

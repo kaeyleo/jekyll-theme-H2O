@@ -543,7 +543,12 @@ a {
       margin-bottom: 0; }
 
 .social-share-wrapper {
-  width: 720px; }
+  float: left;
+  position: relative;
+  left: 50%; }
+  .social-share-wrapper .social-share {
+    position: relative;
+    left: -50%; }
 
 .post-footer-item {
   margin: 0 auto;

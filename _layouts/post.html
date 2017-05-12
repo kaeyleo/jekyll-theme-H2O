@@ -99,7 +99,11 @@ layout: default
 </div>
 <script src="{{ site.baseurl }}assets/js/social-share.min.js"></script>
 <script>
-    socialShare('.social-share', {sites: [{% for i in site.social-share-items %}'{{ i }}',{% endfor %}]});
+    socialShare('.social-share', {
+        sites: [{% for i in site.social-share-items %}'{{ i }}',{% endfor %}],
+        wechatQrcodeTitle: "分享到微信朋友圈",
+        wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将网页分享至朋友圈</p>'
+    });
 </script>
 <script>
 /**
