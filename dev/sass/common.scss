@@ -185,6 +185,7 @@
             overflow: hidden;
             img {
                 width: 100%;
+                vertical-align: middle;
             }
         }
         .post-preview {
@@ -388,6 +389,20 @@
     }
 }
 
+.bgcolor-default {
+    background-color: $color-theme-default;
+}
+.bgcolor-pink {
+    background-color: $color-theme-pink;
+}
+
+.post-no-cover {
+    height: 360px;
+    .post-tags {
+        margin-top: 100px;
+    }
+}
+
 .post-pattern-circuitBoard {
     @include postHeaderPattern('circuitBoard');
 }
@@ -449,6 +464,7 @@
     padding: 0 0 32px;
     .highlight {
         margin: 0 0 16px;
+        overflow: scroll;
     }
     ul, ol {
         li {

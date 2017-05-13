@@ -47,7 +47,9 @@ description: 或许是最漂亮的Jekyll主题
             </article>
         {% endfor %}
 
-        {% include pageNav.html %}
+        {% if paginator %}
+            {% include pageNav.html %}
+        {% endif %}
 
     </div>
 

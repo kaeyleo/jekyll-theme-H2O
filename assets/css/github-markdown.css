@@ -232,11 +232,7 @@
 }
 
 .markdown-body a {
-  color: #0366d6;
-  text-decoration: none;
-}
-
-.markdown-body a:hover {
+  color: inherit;
   text-decoration: underline;
 }
 
@@ -299,7 +295,6 @@
 .markdown-body h3 {
   font-size: 20px;
   font-weight: 600;
-  margin: 26px 0 12px;
 }
 
 .markdown-body h4 {
@@ -352,6 +347,10 @@
 .markdown-body ol ul ol,
 .markdown-body ol ol ol {
   list-style-type: lower-alpha;
+}
+
+li p:nth-child(2) {
+  margin-bottom: 16px !important;
 }
 
 .markdown-body dd {
@@ -501,15 +500,11 @@
 }
 
 .markdown-body h1 {
-  padding-bottom: 0.3em;
   font-size: 2em;
-  border-bottom: 1px solid #eaecef;
 }
 
 .markdown-body h2 {
-  padding-bottom: 0.3em;
   font-size: 1.5em;
-  border-bottom: 1px solid #eaecef;
 }
 
 .markdown-body h3 {

@@ -14,9 +14,6 @@
         .page-num {
             display: none;
         }
-        .page-links {
-            border: none;
-        }
         .page-link {
             width: 56px;
         }
@@ -72,10 +69,6 @@
                 }
             }
         }
-    }
-
-    .social-share-wrapper {
-        width: 92%;;
     }
 
     .author-detail {
@@ -163,7 +156,7 @@
         h3 {
             margin-top: 2px;
             font-size: 18px;
-            letter-spacing: 4px;
+            letter-spacing: 6px;
         }
         .header-img {
             width: 695px;
@@ -212,20 +205,58 @@
         }
     }
     .post-header{
+        padding: 0;
+        height: 360px;
+    }
+    .post-wrapper {
         .post-tags {
-            margin-top: 130px
+            margin: 100px 0 8px;
+        }
+        h1 {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Pingfang SC", "Microsoft Yahei", Sans-serif;
+        }
+        .post-meta {
+            margin-top: 16px;
         }
     }
     .post-content {
         padding-top: 20px;
         .post-subtitle {
-            padding: 8px 0 26px;
+            padding: 8px 0 24px;
+            margin-bottom: 32px;
             &:before {
                 height: 0;
             }
         }
     }
+    .markdown-body {
+        font-family: "Helvetica Neue", Helvetica, Arial, "Pingfang SC", "Microsoft Yahei", Sans-serif;
+        p, ul>li {
+            font-size: 17px;
+            font-weight: 300;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+        }
+        ul>li {
+            font-size: 16px;
+        }
+        img {
+            margin: auto;
+        }
+        strong {
+            font-weight: 400;
+        }
+        blockquote {
+            p {
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: #888;
+                word-break: break-all;
+            }
+        }
+    }
 }
+
 @media screen and (max-width: 376px) { 
     .home-banner {
         h2 {
