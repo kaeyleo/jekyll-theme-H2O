@@ -97,6 +97,14 @@ $(document).ready(function(){
             var marginTop = (containerHeight - imgHeight) / 2;
             img.css('margin-top', marginTop + 'px');
         }
+
+        setTimeout(function(){
+            img.css({
+                'transition': '.6s',
+                'opacity': '1'
+            });
+        }, 0);
+        
     }
 
     postCover($('#postCover'), $('.g-banner'));

@@ -482,6 +482,7 @@ a {
     height: 100%;
     z-index: -2; }
     .post-header .post-cover img {
+      opacity: 0;
       width: 100%; }
 
 .bgcolor-default {
