@@ -21,11 +21,8 @@ layout: default
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-    <div class="post-cover">
-        <img id="postCover" src="{{ page.cover }}" alt="">
-    </div>
+    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
     {% endif %}
-
 </header>
 
 <div class="post-content">

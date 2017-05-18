@@ -28,6 +28,12 @@ tags: jekyll 前端开发 设计
 
 ## 新特性
 
+### 主题配色
+
+支持两种主题配色——蓝色和粉色。
+
+![](https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/assets/img/jekyll-theme-h2o-themecolor.jpg?raw=true)
+
 ### 侧边栏
 
 相比自己上一个版本的博客主题，首页增加侧边栏，可以展示博主简介和推荐标签（默认12个，可以在 ```_config.yml``` 文件里的 ```recommend-condition-size``` 处修改显示标签的最大个数）。
@@ -90,7 +96,7 @@ tags: jekyll 前端开发 设计
 - Go
 - Python
 
-### 评论功能
+### 第三方评论
 
 由于多说关闭，又对国内其他第三方评论插件无感，所以将[Disqus](https://disqus.com/)列为首选（目前模板也只提供了这个），请自备梯子。
 
@@ -108,18 +114,14 @@ H2O在这方面还有很多需要完善的地方，比如：<strike>代码高亮
 
 ### 其他特性：
 
-- 增加了网页标题SEO优化
-
-- 支持两种主题颜色蓝色（默认）和粉色，可以在 ```_config.yml``` 文件里的 ```theme-color``` 处根据注释选择配置。主要效果体现在顶部导航栏的logo和鼠标悬停时文字显示的颜色效果。
-
-- 自定义文章封面
-
+- 网页标题SEO优化
 - 标签索引，点击标签跳转到标签目录，即可查看对应的全部文章
-
-- 支持Disqus评论系统
+- 漂亮
+- 好看
+- 美
 
 ## 最后
 
 本想趁这次机会将整站https化的，但折腾了半天发现弹性web托管并不支持，所以暂时搁置https的想法。另外，博客统计工具一直使用的是[百度统计](https://tongji.baidu.com)，这次新增了Google Analytics。
 
-H2O主题从0到1，独自设计、开发再到发布大约用了一周时间，也算完成一个小小的开源项目了，后续也将持续完善和更新。
+这次从0到1，独自设计、开发再到发布大约用了一周时间，也算完成一个小小的开源项目了，后续也将持续完善和更新，欢迎[Star](https://github.com/kaeyleo/jekyll-theme-H2O)。
