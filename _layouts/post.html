@@ -49,7 +49,7 @@ layout: default
         </div>
         <div class="author-name" rel="author">{{ site.author }}</div>
         <div class="bio">
-            <p>前端开发者，热爱技术&设计，简单乐观爱创造。</p>
+            <p>{{ site.bio }}</p>
         </div>
         {% if site.sns.size > 0 %}
         <ul class="sns-links">
@@ -96,7 +96,7 @@ layout: default
         <div id="disqus_thread"></div>
     </section>
     {% endif %}
-</div>
+</section>
 <script src="{{ site.baseurl }}assets/js/social-share.min.js"></script>
 <script>
     socialShare('.social-share', {
