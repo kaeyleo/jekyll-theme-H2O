@@ -1,6 +1,6 @@
 ## H2O
 
-[在线预览 →](http://liaokeyu.com/)
+[在线预览 View →](http://liaokeyu.com/)
 
 ![](assets/img/jekyll-theme-h2o-realhome.jpg)
 
@@ -123,7 +123,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 #### 社交图标
 
-使用阿里的图标管理平台Iconfont整理了一套常用的社交图标用于博客的个人简介上，包括微博、知乎、掘金、简书、Github等十二个网站，并且对鼠标悬停时的样式颜色进行了优化。
+使用阿里的图标管理平台Iconfont整理了一套常用的社交图标用于博客的个人简介上，包括微博、知乎、掘金、简书、Github等十三个网站，并且对鼠标悬停时的样式颜色进行了优化。
 
 配置格式如下：
 
@@ -146,6 +146,7 @@ sns属性可选参数：
 Instagrame | `instagrame`
 掘金 | `juejin`
 Github | `github`
+豆瓣 | `douban`
 Facebook | `facebook`
 Dribble | `dribble`
 UI中国 | `uicn`

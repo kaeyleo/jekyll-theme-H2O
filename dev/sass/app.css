@@ -298,9 +298,11 @@ a {
       .author-card .sns-links li .icon-twitter:hover {
         color: #39A6F8; }
       .author-card .sns-links li .icon-instagram:hover {
-        color: #303030; }
+        color: #D92580; }
       .author-card .sns-links li .icon-juejin:hover {
         color: #1682FC; }
+      .author-card .sns-links li .icon-douban:hover {
+        color: #2E963D; }
       .author-card .sns-links li .icon-github:hover {
         color: #575757; }
       .author-card .sns-links li .icon-facebook:hover {

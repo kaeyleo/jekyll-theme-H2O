@@ -21,7 +21,7 @@ disqus: true
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban','twitter']
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
@@ -29,7 +29,7 @@ theme-color: 'default'  # pink or default
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 postPatterns: 'circuitBoard'
 
-# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagrame, juejin, github, facebook, dribble, uicn, jianshu, medium, linkedin
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagrame, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   weibo: '//weibo.com/lovecolcol'
   juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
