@@ -824,6 +824,8 @@ a {
     box-shadow: none; }
     .article-list .article-item:first-child {
       border-top: none; }
+    .article-list .article-item .post-cover {
+      max-height: 200px; }
     .article-list .article-item .post-preview .post-title {
       font-size: 18px;
       line-height: 26px; }

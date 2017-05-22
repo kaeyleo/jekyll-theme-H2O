@@ -177,6 +177,9 @@
             &:first-child {
                 border-top: none;
             }
+            .post-cover {
+                max-height: 200px;
+            }
             .post-preview {
                 .post-title {
                     font-size: 18px;
