@@ -35,11 +35,12 @@ a {
     cursor: pointer;
     transition: .2s;
 }
-::-moz-selection {
-    color: #fff;
-    background: $color-f-primary;
-}
 ::selection {
-    color: #fff;
-    background: $color-f-primary;
+    background-color: rgba(0, 147, 254, .2);
+}
+::-moz-selection {
+    background-color: rgba(0, 147, 254, .2);
+}
+::-webkit-selection {
+    background-color: rgba(0, 147, 254, .2);
 }

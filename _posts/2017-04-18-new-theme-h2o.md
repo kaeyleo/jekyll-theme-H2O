@@ -36,11 +36,11 @@ tags: jekyll 前端开发 设计
 
 ### 侧边栏
 
-相比自己上一个版本的博客主题，首页增加侧边栏，可以展示博主简介和推荐标签（默认12个，可以在 ```_config.yml``` 文件里的 ```recommend-condition-size``` 处修改显示标签的最大个数）。
+相比自己上一个版本的博客主题，首页增加了侧边栏，方便展示博主的个人信息和文章标签。
 
 ### 社交图标
 
-使用阿里的图标管理平台[Iconfont](http://iconfont.cn/)整理了一套<strike>墙内外</strike>常用的社交图标，包括微博、知乎、掘金、简书、Github等十二个网站，在 ```_config.yml``` 文件的 ```sns``` 处根据注释来选择配置。
+使用阿里的图标管理平台[Iconfont](http://iconfont.cn/)整理了一套<strike>墙内外</strike>常用的社交图标，包括微博、知乎、掘金、简书、Github等十多个网站，鼠标悬停会显示该站的主题色。
 
 ![social iconfont](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-snstext.jpg)
 
@@ -56,15 +56,13 @@ tags: jekyll 前端开发 设计
 
 在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。
 
-请在 ```config.yml``` 里 ```postPatterns``` 处根据注释所提示的参数选择配置。
-
 ![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-headerpatterns.jpg)
 
 ### 代码高亮
 
 模板引入了[Prism.js](http://prismjs.com)，一款轻量、可扩展的代码语法高亮库。
 
-很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，就连 JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
+很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
 
 ![代码高亮](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png)
 
@@ -102,7 +100,7 @@ tags: jekyll 前端开发 设计
 
 ### 移动端优化
 
-响应式设计，对手机和平板等设备做了优化。
+响应式设计，对手机和平板等移动设备做了优化。
 
 ![](http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realm.png)
 
