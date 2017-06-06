@@ -255,6 +255,81 @@
     }
 }
 
+.search-card {
+    position: relative;
+    margin-top: 16px;
+    padding: 0;
+    float: right;
+    width: 240px;
+    input, .search_item {
+        font-size: 16px;
+        color: $color-f-primary;
+    }
+    input {
+        @include cardStyle;
+        position: relative;
+        padding: 12px 46px 12px 18px;
+        margin: 0;
+        width: 100%;
+        background-color: #fff;
+        outline: none;
+        z-index: 1;
+    }
+    ::-webkit-input-placeholder {
+        color: #9EA8B3;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+        color: #9EA8B3; 
+    } 
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+        color: #9EA8B3; 
+    } 
+    .icon-search {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        font-size: 26px;
+        color: #CAD3DC;
+        transition: .2s;
+        z-index: 1;
+    }
+    .search_result {
+        position: relative;
+        margin-top: -2px;
+        max-height: 230px;
+        background-color: #fff;
+        border-radius: 0 0 4px 4px;
+        overflow: scroll;
+        z-index: 0;
+    }
+    .search_item {
+        padding: 6px 18px;
+        margin-bottom: 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        border-left: 1px solid #E7EAF1;
+        border-right: 1px solid #E7EAF1;
+        box-sizing: border-box;
+        opacity: .8;
+        transition: .2s;
+        &:first-child {
+            padding-top: 14px;
+        }
+        &:last-child {
+            padding-bottom: 14px;
+            border-radius: 0 0 4px 4px;
+            border-bottom: 1px solid #E7EAF1;
+        }
+        &:hover {
+            opacity: 1;
+            background-color: #FAFAFA;
+        }
+    }
+}
+
 .pagination {
     float: left;
     position: relative;
@@ -457,12 +532,16 @@
 
 // Post style
 .markdown-body {
+    font-family: 'Merriweather-Light', $fonts;
     width: $post-content-w;
     box-sizing: border-box;
     padding: 0 0 32px;
     .highlight {
         margin: 0 0 16px;
         overflow: scroll;
+    }
+    img {
+        transition: .3s;
     }
     ul, ol {
         li {

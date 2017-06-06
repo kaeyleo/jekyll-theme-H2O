@@ -361,6 +361,76 @@ a {
     .g-sidebar section .tag {
       margin-bottom: 8px; }
 
+.search-card {
+  position: relative;
+  margin-top: 16px;
+  padding: 0;
+  float: right;
+  width: 240px; }
+  .search-card input, .search-card .search_item {
+    font-size: 16px;
+    color: #4E4E4E; }
+  .search-card input {
+    padding: 30px 20px;
+    background-color: #fff;
+    border: 1px solid #E7EAF1;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 37, 55, 0.06);
+    position: relative;
+    padding: 12px 46px 12px 18px;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    outline: none;
+    z-index: 1; }
+  .search-card ::-webkit-input-placeholder {
+    color: #9EA8B3; }
+  .search-card :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #9EA8B3; }
+  .search-card ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #9EA8B3; }
+  .search-card .icon-search {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 26px;
+    color: #CAD3DC;
+    transition: .2s;
+    z-index: 1; }
+  .search-card .search_result {
+    position: relative;
+    margin-top: -2px;
+    max-height: 230px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    overflow: scroll;
+    z-index: 0; }
+  .search-card .search_item {
+    padding: 6px 18px;
+    margin-bottom: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-left: 1px solid #E7EAF1;
+    border-right: 1px solid #E7EAF1;
+    box-sizing: border-box;
+    opacity: .8;
+    transition: .2s; }
+    .search-card .search_item:first-child {
+      padding-top: 14px; }
+    .search-card .search_item:last-child {
+      padding-bottom: 14px;
+      border-radius: 0 0 4px 4px;
+      border-bottom: 1px solid #E7EAF1; }
+    .search-card .search_item:hover {
+      opacity: 1;
+      background-color: #FAFAFA; }
+
 .pagination {
   float: left;
   position: relative;
@@ -546,12 +616,15 @@ a {
       bottom: 0; }
 
 .markdown-body {
+  font-family: "Merriweather-Light", -apple-system, Verdana, "PingFang SC", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   width: 720px;
   box-sizing: border-box;
   padding: 0 0 32px; }
   .markdown-body .highlight {
     margin: 0 0 16px;
     overflow: scroll; }
+  .markdown-body img {
+    transition: .3s; }
   .markdown-body ul li p, .markdown-body ol li p {
     margin: 0; }
     .markdown-body ul li p:first-child, .markdown-body ol li p:first-child {
@@ -713,7 +786,7 @@ a {
   .article-list {
     float: none;
     margin: 0 auto; }
-  .g-sidebar {
+  .g-sidebar, .search-card {
     display: none; }
   .pagination .page-num {
     display: none; }
@@ -859,24 +932,24 @@ a {
       margin-bottom: 32px; }
       .post-content .post-subtitle:before {
         height: 0; }
-  .markdown-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Pingfang SC", "Microsoft Yahei", Sans-serif; }
-    .markdown-body p, .markdown-body ul > li {
-      font-size: 17px;
-      font-weight: 300;
-      -webkit-font-smoothing: auto;
-      -moz-osx-font-smoothing: auto; }
-    .markdown-body ul > li {
-      font-size: 16px; }
-    .markdown-body img {
-      margin: auto; }
-    .markdown-body strong {
-      font-weight: 400; }
-    .markdown-body blockquote p {
-      font-size: 18px;
-      letter-spacing: 1px;
-      color: #888;
-      word-break: break-all; } }
+  .markdown-body p, .markdown-body ul > li {
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto; }
+  .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+    margin-top: 24px; }
+  .markdown-body table {
+    margin: 16px auto; }
+  .markdown-body img {
+    margin: 0 auto 16px; }
+  .markdown-body strong {
+    font-weight: 400; }
+  .markdown-body blockquote p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #888;
+    word-break: break-all; } }
 
 @media screen and (max-width: 376px) {
   .home-banner h2 {

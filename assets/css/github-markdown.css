@@ -261,8 +261,10 @@
 }
 
 .markdown-body table {
+  margin: 32px auto;
   border-spacing: 0;
   border-collapse: collapse;
+  overflow: auto;
 }
 
 .markdown-body td,
@@ -276,20 +278,22 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
+  margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
 }
 
 .markdown-body h1 {
+  margin-top: 36px;
   font-size: 28px;
   font-weight: 600;
 }
 
 .markdown-body h2 {
+  margin-top: 28px;
   font-size: 24px;
   font-weight: 600;
-  margin-top: 32px;
 }
 
 .markdown-body h3 {
@@ -314,8 +318,8 @@
 
 .markdown-body p {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 17px;
+  line-height: 1.8;
   text-align: justify;
 }
 
@@ -428,7 +432,6 @@ li p:nth-child(2) {
 .markdown-body ul,
 .markdown-body ol,
 .markdown-body dl,
-.markdown-body table,
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
@@ -560,12 +563,6 @@ li p:nth-child(2) {
 .markdown-body dl dd {
   padding: 0 16px;
   margin-bottom: 16px;
-}
-
-.markdown-body table {
-  display: block;
-  width: 100%;
-  overflow: auto;
 }
 
 .markdown-body table th {
