@@ -1,3 +1,16 @@
+@media screen and (min-width: 1920px) {
+    .home-banner {
+        height: 600px;
+        h2 {
+            padding-top: 260px;
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+}
+
 @media screen and (max-width: $g-container-w) {
     .g-container {
         width: auto;
