@@ -24,6 +24,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 - 社交图标
 - SEO标题优化
 - 文章标签索引
+- 博客文章搜索
 
 ### 快速开始
 
@@ -49,6 +50,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 	- [个人简介](#个人简介)
 	- [标签](#标签)
 	- [代码高亮](#代码高亮)
+	- [文章搜索](#文章搜索)
 - 个性化
 	- [主题皮肤](#主题皮肤)
 	- [头图底纹](#头图底纹)
@@ -218,6 +220,22 @@ Tags配置说明：
 - PHP
 - Go
 - Python
+
+#### 文章搜索
+
+基于Jekyll服务器生成文章索引文件 `search.json` 为博客提供搜索服务。输入文章标题或与文章标签相关的关键字即可。
+
+搜索功能默认是开启的，以卡片的样式显示在侧边栏底部。如需关闭请将配置文件 `_config.yml` 中 `search ` 属性的值改为 `false` 。 
+
+```
+# Search
+search: true
+```
+
+说明 | 参数
+----|-----
+开启搜索功能 | `true`
+关闭搜索功能 | `false`
 
 #### 主题皮肤
 

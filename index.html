@@ -88,12 +88,13 @@ description: 或许是最漂亮的Jekyll主题
 
     </aside>
 
+    {% if site.search %}
     <aside class="search-card">
         <input id="search_input" type="text" placeholder="Search...">
          <i class="iconfont icon-search"></i>
         <div class="search_result"></div>
     </aside>
-
+    {% endif %}
 </main>
 
 {% include footer.html %}

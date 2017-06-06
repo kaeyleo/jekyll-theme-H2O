@@ -16,6 +16,9 @@ nickname: '悟空'
 bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
 avatar: 'assets/img/profile.png'
 
+# Search
+search: true
+
 # Comments
 disqus: true
 
