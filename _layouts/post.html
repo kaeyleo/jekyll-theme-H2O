@@ -9,7 +9,7 @@ layout: default
         <div class="post-tags">
             {% if page.tags.size > 0 %} 
             {% for tag in page.tags  %}
-            <a href="{{ site.baseurl }}tags/#{{ tag }}" class="post-tag">{{ tag }}</a>
+            <a href="{{ site.baseurl }}tags#{{ tag }}" class="post-tag">{{ tag }}</a>
             {% endfor %}
             {% endif %}
         </div>
@@ -114,7 +114,8 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 */
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://liaokeyu.disqus.com/embed.js';
+/*写入自己的disqus信息*/
+s.src = 'https://yourdisqusname.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
