@@ -341,9 +341,11 @@ a {
   .article-item .post-meta .post-tag:hover, .tags-card .tag:hover, .tags-content .tag:hover {
     color: #83888F; }
 
-.g-sidebar {
+.g-sidebar-wrapper {
   float: right;
-  width: 240px;
+  width: 240px; }
+
+.g-sidebar {
   padding: 30px 20px;
   background-color: #fff;
   border: 1px solid #E7EAF1;
@@ -356,7 +358,7 @@ a {
     .g-sidebar section:first-child {
       padding-top: 0; }
     .g-sidebar section:last-child {
-      border-bottom: 0;
+      border-bottom: none;
       padding-bottom: 0; }
     .g-sidebar section .tag {
       margin-bottom: 8px; }
@@ -364,9 +366,7 @@ a {
 .search-card {
   position: relative;
   margin-top: 16px;
-  padding: 0;
-  float: right;
-  width: 240px; }
+  padding: 0; }
   .search-card input, .search-card .search_item {
     font-size: 16px;
     color: #4E4E4E; }

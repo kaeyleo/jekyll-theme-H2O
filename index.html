@@ -53,48 +53,51 @@ description: 或许是最漂亮的Jekyll主题
 
     </div>
 
-    <aside class="g-sidebar">
-        <section class="author-card">
-            <div class="avatar">
-                <img src="{{ site.baseurl }}{{ site.avatar }}" alt="">
-            </div>
-            <div class="author-name" rel="author">{{ site.author }}</div>
-            <div class="bio">
-                <p>{{ site.bio }}</p>
-            </div>
-            {% if site.sns.size > 0 %}
-            <ul id="sns-links" class="sns-links">
-                {% for s in site.sns %}
-                <li>
-                    <a href="{{ s[1] }}" target="_blank">
-                        <i class="iconfont icon-{{ s[0] }}"></i>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </section>
-
-        {% if site.recommend-tags and site.tags.size>0 %}
-        <section class="tags-card">
-            {% for tag in site.tags %}
-                {% if forloop.index > site.recommend-condition-size %}
-                    {% break %}
+    <aside class="g-sidebar-wrapper">
+        <div class="g-sidebar">
+            <section class="author-card">
+                <div class="avatar">
+                    <img src="{{ site.baseurl }}{{ site.avatar }}" alt="">
+                </div>
+                <div class="author-name" rel="author">{{ site.author }}</div>
+                <div class="bio">
+                    <p>{{ site.bio }}</p>
+                </div>
+                {% if site.sns.size > 0 %}
+                <ul id="sns-links" class="sns-links">
+                    {% for s in site.sns %}
+                    <li>
+                        <a href="{{ s[1] }}" target="_blank">
+                            <i class="iconfont icon-{{ s[0] }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
                 {% endif %}
-            <a href="{{ site.baseurl }}tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
-            {% endfor %}
-        </section>
+            </section>
+
+            {% if site.recommend-tags and site.tags.size>0 %}
+            <section class="tags-card">
+                {% for tag in site.tags %}
+                    {% if forloop.index > site.recommend-condition-size %}
+                        {% break %}
+                    {% endif %}
+                <a href="{{ site.baseurl }}tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+                {% endfor %}
+            </section>
+            {% endif %}
+        </div>
+
+        {% if site.search %}
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search...">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </div>
         {% endif %}
-
+        
     </aside>
-
-    {% if site.search %}
-    <aside class="search-card">
-        <input id="search_input" type="text" placeholder="Search...">
-         <i class="iconfont icon-search"></i>
-        <div class="search_result"></div>
-    </aside>
-    {% endif %}
+    
 </main>
 
 {% include footer.html %}

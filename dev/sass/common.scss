@@ -234,19 +234,21 @@
     @include tagStyle;
 }
 
-.g-sidebar {
+.g-sidebar-wrapper {
     float: right;
     width: 240px;
+}
+
+.g-sidebar {
     @include cardStyle;
     section {
         padding: 30px 0;
         border-bottom: 1px solid #E7EAF1;
-
         &:first-child {
             padding-top: 0;
         }
         &:last-child {
-            border-bottom: 0;
+            border-bottom: none;
             padding-bottom: 0;
         }
         .tag {
@@ -259,8 +261,8 @@
     position: relative;
     margin-top: 16px;
     padding: 0;
-    float: right;
-    width: 240px;
+    // float: right;
+    // width: 240px;
     input, .search_item {
         font-size: 16px;
         color: $color-f-primary;
