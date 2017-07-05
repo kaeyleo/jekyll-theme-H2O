@@ -458,9 +458,14 @@ a {
     border-radius: 2px;
     cursor: pointer; }
     .pagination .page-link:hover {
-      background-color: #F7F8FA; }
+      color: #8F98AA;
+      background-color: #EEF0F4; }
   .pagination .active {
-    background-color: #F7F8FA; }
+    color: #8F98AA;
+    background-color: #EEF0F4; }
+  .pagination #page-link-container {
+    display: inline-block;
+    float: left; }
 
 .g-footer {
   min-height: 40px;

@@ -358,11 +358,17 @@
         border-radius: 2px;
         cursor: pointer;
         &:hover {
-            background-color: $color-bg;
+            color: #8F98AA;
+            background-color: #EEF0F4;
         }
     }
     .active {
-        background-color: $color-bg;
+        color: #8F98AA;
+        background-color: #EEF0F4;
+    }
+    #page-link-container {
+        display: inline-block;
+        float: left;
     }
 }
 
