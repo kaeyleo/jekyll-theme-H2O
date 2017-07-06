@@ -221,5 +221,21 @@ $(document).ready(function(){
     }
 
     new Search();
+
+    /**
+     * Night mode
+     */
+    function nightMode() {
+        var el = $('body'),
+            className = 'night-mode';
+
+        var date = new Date(),
+            hour = date.getHours();
+
+        if((hour >= 0 && hour <= 6) || hour === 23) {
+            el.addClass(className);
+        }
+    }
+    nightMode();
     
 });
