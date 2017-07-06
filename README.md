@@ -338,13 +338,17 @@ postPatterns: 'circuitBoard'
 
 [Disqus](https://disqus.com/)是一个第三方社交评论插件，体验相当不错。
 
-模板默认开启Disqus评论插件，如需关闭请在 `_config.yml` 中配置参数 `true` (开启) 或者 `false` (关闭) :
-在_layouts/post.html中找到Disqus的javascript引用，修改成自己的Disqus账户
+模板默认开启Disqus评论插件，如需关闭请在 `_config.yml` 中配置参数 `true` (开启) 或者 `false` (关闭) :  
+
+在配置文件 `_config.yml` 中找到Disqus的相关配置，设置 `disqus` 参数为 `true` 打开评论功能，并且设置 `disqus_url`。
 
 ```
 # Comments
 disqus: true
+disqus_url: 'https://你的disqus账户名.disqus.com/embed.js'
 ```
+
+注：`disqus` 默认值为 `false`
 
 #### Share.js
 

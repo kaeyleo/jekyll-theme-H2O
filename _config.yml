@@ -20,7 +20,8 @@ avatar: 'assets/img/profile.png'
 search: true
 
 # Comments
-disqus: true
+disqus: false
+disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
 # Share
 social-share: true
