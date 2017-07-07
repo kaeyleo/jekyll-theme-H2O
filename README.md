@@ -17,6 +17,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 ### 特性
 
 - 代码高亮
+- 夜间模式
 - 支持Disqus评论系统
 - 粉蓝两种主题色
 - 头图个性化底纹
@@ -51,6 +52,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 	- [标签](#标签)
 	- [代码高亮](#代码高亮)
 	- [文章搜索](#文章搜索)
+	- [夜间模式](#夜间模式)
 - 个性化
 	- [主题皮肤](#主题皮肤)
 	- [头图底纹](#头图底纹)
@@ -236,6 +238,20 @@ search: true
 ----|-----
 开启搜索功能 | `true`
 关闭搜索功能 | `false`
+
+#### 夜间模式
+
+晚11点至次日凌晨6点自动开启夜间模式。如果不需要，则将配置文件 `_config.yml` 中 `nightMode ` 属性的值改为 `false` 即可。 
+
+```
+# Night mode
+nightMode: true
+```
+
+说明 | 参数
+----|-----
+开启夜间模式 | `true`
+关闭夜间模式 | `false`
 
 #### 主题皮肤
 

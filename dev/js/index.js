@@ -236,6 +236,9 @@ $(document).ready(function(){
             el.addClass(className);
         }
     }
-    nightMode();
+    
+    if($('#nm-switch').val() === 'true') {
+        nightMode();
+    }
     
 });

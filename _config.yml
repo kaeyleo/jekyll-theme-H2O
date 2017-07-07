@@ -19,6 +19,9 @@ avatar: 'assets/img/profile.png'
 # Search
 search: true
 
+# Night mode
+nightMode: true
+
 # Comments
 disqus: false
 disqus_url: 'https://liaokeyu.disqus.com/embed.js'
