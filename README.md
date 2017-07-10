@@ -26,6 +26,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 - SEO标题优化
 - 文章标签索引
 - 博客文章搜索
+- 复制文章内容自动添加版权
 
 ### 快速开始
 
