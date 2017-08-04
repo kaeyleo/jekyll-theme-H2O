@@ -10,15 +10,21 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 如果你喜欢这个博客模板，请在右上角star一下，非常感谢～
 
+### Preview
+
+Using your smartphone to scan QR Code
+
 如果想体验手机浏览效果，可以扫一下二维码：
 
 ![](assets/img/1494404591.png)
 
-### 特性
+### Features 特性
+
+#### CN
 
 - 代码高亮
 - 夜间模式
-- 支持Disqus评论系统
+- Disqus评论系统
 - 粉蓝两种主题色
 - 头图个性化底纹
 - 响应式设计
@@ -28,7 +34,21 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 - 博客文章搜索
 - 复制文章内容自动添加版权
 
-### 快速开始
+#### EN
+
+- Code highlight
+- Night mode
+- Disqus Comment System
+- Theme color: Blue & Pink
+- Hero Patterns
+- Responsive design
+- SNS Icon
+- Title SEO
+- Tags system
+- Search
+- Copyright text on copy event
+
+### Usage 快速开始
 
 首先你需要安装Jekyll，请查看文档: [快速指南](http://jekyll.com.cn/docs/quickstart/)
 
@@ -40,12 +60,14 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 最后，在命令行输入 ```jekyll server``` 开启服务，就能在本地预览主题了。
 
-### 配置文档
+如果需要部署到线上环境，请参照配置文档的 **开始** 章节进行操作。
 
-- 开始
+### Document 配置文档
+
+- Get Started 开始
 	- [站点信息](#站点信息)
 	- [写一篇文章](#写一篇文章)
-- 组件
+- Components 组件
 	- [导航](#导航)
 	- [侧边栏](#侧边栏)
 	- [社交图标](#社交图标)
@@ -54,7 +76,7 @@ If you like this theme or using it, please give a ⭐️ for motivation ;)
 	- [代码高亮](#代码高亮)
 	- [文章搜索](#文章搜索)
 	- [夜间模式](#夜间模式)
-- 个性化
+- Style 个性化
 	- [主题皮肤](#主题皮肤)
 	- [头图底纹](#头图底纹)
 - 高级部分
@@ -377,12 +399,12 @@ social-share: true # 开启或者关闭分享功能
 social-share-items: ['wechat', 'weibo', 'douban','twitter']
 ```
 
-### 贡献
+### contribution 贡献
 
 Any types of contribution are welcome. Thanks.
 
 接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 ```Pull Request```
 
-### 许可证
+### License 许可证
 
 Jekyll-Theme-H2O is licensed under [MIT](https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/LICENSE).
