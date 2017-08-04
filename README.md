@@ -399,7 +399,7 @@ social-share: true # 开启或者关闭分享功能
 social-share-items: ['wechat', 'weibo', 'douban','twitter']
 ```
 
-### contribution 贡献
+### Contribution 贡献
 
 Any types of contribution are welcome. Thanks.
 
