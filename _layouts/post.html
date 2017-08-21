@@ -1,6 +1,11 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include post-head.html %}
+<body>
+    <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+<input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
 
 {% include header.html %}
 
@@ -94,6 +99,9 @@ layout: default
     </section>
     {% endif %}
 </section>
+
+{% include footer.html %}
+
 <script src="{{ site.baseurl }}assets/js/social-share.min.js"></script>
 <script>
     socialShare('.social-share', {
@@ -121,4 +129,8 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% include footer.html %}
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/prism.js"></script>
+<script src="{{ site.baseurl }}assets/js/index.min.js"></script>
+</body>
+</html>
