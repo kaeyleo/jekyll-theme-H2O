@@ -1,22 +1,22 @@
-## H2O
-
-[在线预览 View →](http://liaokeyu.com/)
-
-![](assets/img/jekyll-theme-h2o-realhome.jpg)
-
-![](assets/img/jekyll-theme-h2o-realm.png)
-
-If you like this theme or using it, please give a ⭐️ for motivation ;)
-
-如果你喜欢这个博客模板，请在右上角star一下，非常感谢～
+## jekyll-theme-H2O
 
 ### Preview
 
-Using your smartphone to scan QR Code
+#### [在线预览 Live Demo →](http://liaokeyu.com/)
+
+![](screenshot/jekyll-theme-h2o-realhome.jpg)
+
+![](screenshot/jekyll-theme-h2o-realm.png)
+
+如果你喜欢这个博客模板，请在右上角star一下，非常感谢～
+
+If you like this theme or using it, please give a ⭐️ for motivation ;)
 
 如果想体验手机浏览效果，可以扫一下二维码：
 
-![](assets/img/1494404591.png)
+![](screenshot/1494404591.png)
+
+Using your smartphone to scan the QR Code
 
 ### Features 特性
 
@@ -64,19 +64,21 @@ Using your smartphone to scan QR Code
 
 ### Document 配置文档
 
-- Get Started 开始
+#### CN
+
+- 开始
 	- [站点信息](#站点信息)
 	- [写一篇文章](#写一篇文章)
-- Components 组件
+- 组件
 	- [导航](#导航)
 	- [侧边栏](#侧边栏)
 	- [社交图标](#社交图标)
 	- [个人简介](#个人简介)
 	- [标签](#标签)
-	- [代码高亮](#代码高亮)
 	- [文章搜索](#文章搜索)
+	- [代码高亮](#代码高亮)
 	- [夜间模式](#夜间模式)
-- Style 个性化
+- 个性化
 	- [主题皮肤](#主题皮肤)
 	- [头图底纹](#头图底纹)
 - 高级部分
@@ -84,6 +86,30 @@ Using your smartphone to scan QR Code
 - 集成服务 
 	- [Disqus](#Disqus)
 	- [Share.js](#Share.js)
+
+#### EN
+
+- Get Started
+	- [Site Settings](#站点信息)
+	- [Write Posts](#写一篇文章)
+- Components
+	- [Navigation Menu](#导航)
+	- [Sidebar](#侧边栏)
+	- [SNS Icons](#社交图标)
+	- [Personal Information](#个人简介)
+	- [Tags](#标签)
+	- [Search](#文章搜索)
+	- [Syntax Highlight](#代码高亮)
+	- [Night Mode](#夜间模式)
+- Style
+	- [Theme Color](#主题皮肤)
+	- [Hero Background Patterns](#头图底纹)
+- Advanced
+	- [Customization](#自定义)
+- Plugins
+	- [Disqus](#Disqus)
+	- [Share.js](#Share.js)
+
 
 You can easily get started by modifying _config.yml
 
@@ -144,7 +170,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 #### 侧边栏
 
-![](assets/img/jekyll-theme-h2o-sideBar.png)
+![](screenshot/jekyll-theme-h2o-sideBar.png)
 
 侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。 
 
@@ -211,6 +237,24 @@ Tags配置说明：
 `recommend-tags` | `true`, `false` | 是否显示推荐标签
 `recommend-condition-size` | `12` 或其他数字 | 推荐标签个数限制
 
+#### 文章搜索
+
+![](screenshot/jekyll-theme-h2o-search.png)
+
+基于Jekyll服务器生成文章索引文件 `search.json` 为博客提供搜索服务。输入文章标题或与文章标签相关的关键字即可。
+
+搜索功能默认是开启的，以卡片的样式显示在侧边栏底部。如需关闭请将配置文件 `_config.yml` 中 `search ` 属性的值改为 `false` 。 
+
+```
+# Search
+search: true
+```
+
+说明 | 参数
+----|-----
+开启搜索功能 | `true`
+关闭搜索功能 | `false`
+
 #### 代码高亮
 
 模板引入了[Prism.js](http://prismjs.com)，一款轻量、可扩展的代码语法高亮库。
@@ -246,22 +290,6 @@ Tags配置说明：
 - Go
 - Python
 
-#### 文章搜索
-
-基于Jekyll服务器生成文章索引文件 `search.json` 为博客提供搜索服务。输入文章标题或与文章标签相关的关键字即可。
-
-搜索功能默认是开启的，以卡片的样式显示在侧边栏底部。如需关闭请将配置文件 `_config.yml` 中 `search ` 属性的值改为 `false` 。 
-
-```
-# Search
-search: true
-```
-
-说明 | 参数
-----|-----
-开启搜索功能 | `true`
-关闭搜索功能 | `false`
-
 #### 夜间模式
 
 晚11点至次日凌晨6点自动开启夜间模式。如果不需要，则将配置文件 `_config.yml` 中 `nightMode ` 属性的值改为 `false` 即可。 
@@ -278,7 +306,7 @@ nightMode: true
 
 #### 主题皮肤
 
-![](assets/img/jekyll-theme-h2o-themecolor.jpg)
+![](screenshot/jekyll-theme-h2o-themecolor.jpg)
 
 支持两种主题颜色蓝色（默认）和粉色
 
@@ -307,7 +335,7 @@ header-img: assets/img/banner.jpg
 
 #### 头图底纹
 
-![](assets/img/jekyll-theme-h2o-heroPatterns.png)
+![](screenshot/jekyll-theme-h2o-heroPatterns.png)
 
 在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。六种底纹（电路、食物、云海、钻石等等）供你选择，配置如下：
 
