@@ -30,15 +30,15 @@ description: 或许是最漂亮的Jekyll主题
                     {% if post.subtitle %}
                     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
                     {% endif %}
-                    {% if post.subtitle.size==0 or post.subtitle==nil %} 
+                    {% if post.subtitle.size==0 or post.subtitle==nil %}
                     <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
                     {% endif %}
                 </section>
                 <footer class="post-meta">
                     <div class="post-tags">
-                        {% if post.tags.size > 0 %} 
+                        {% if post.tags.size > 0 %}
                             {% for tag in post.tags  %}
-                        <a href="{{ site.baseurl }}tags.html#{{ tag }}" class="post-tag">{{ tag }}</a>
+                            <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
@@ -95,9 +95,9 @@ description: 或许是最漂亮的Jekyll主题
             <div class="search_result"></div>
         </div>
         {% endif %}
-        
+
     </aside>
-    
+
 </main>
 
 {% include footer.html %}
