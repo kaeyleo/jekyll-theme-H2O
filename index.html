@@ -10,7 +10,7 @@ description: 或许是最漂亮的Jekyll主题
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
     {% if page.header-img %}
-    <img class="header-img" src="{{ site.baseurl }}{{ page.header-img }}" alt="">
+    <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
 </div>
 
@@ -57,7 +57,7 @@ description: 或许是最漂亮的Jekyll主题
         <div class="g-sidebar">
             <section class="author-card">
                 <div class="avatar">
-                    <img src="{{ site.baseurl }}{{ site.avatar }}" alt="">
+                    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="">
                 </div>
                 <div class="author-name" rel="author">{{ site.author }}</div>
                 <div class="bio">
@@ -82,7 +82,7 @@ description: 或许是最漂亮的Jekyll主题
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
                     {% endif %}
-                <a href="{{ site.baseurl }}tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+                    <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
                 {% endfor %}
             </section>
             {% endif %}
