@@ -10,7 +10,7 @@ description: 或许是最漂亮的Jekyll主题
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
     {% if page.header-img %}
-    <img class="header-img" src="{{ site.baseurl }}{{ page.header-img }}" alt="">
+    <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
 </div>
 
@@ -30,15 +30,15 @@ description: 或许是最漂亮的Jekyll主题
                     {% if post.subtitle %}
                     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
                     {% endif %}
-                    {% if post.subtitle.size==0 or post.subtitle==nil %} 
+                    {% if post.subtitle.size==0 or post.subtitle==nil %}
                     <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
                     {% endif %}
                 </section>
                 <footer class="post-meta">
                     <div class="post-tags">
-                        {% if post.tags.size > 0 %} 
+                        {% if post.tags.size > 0 %}
                             {% for tag in post.tags  %}
-                        <a href="{{ site.baseurl }}tags.html#{{ tag }}" class="post-tag">{{ tag }}</a>
+                            <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
@@ -57,7 +57,7 @@ description: 或许是最漂亮的Jekyll主题
         <div class="g-sidebar">
             <section class="author-card">
                 <div class="avatar">
-                    <img src="{{ site.baseurl }}{{ site.avatar }}" alt="">
+                    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="">
                 </div>
                 <div class="author-name" rel="author">{{ site.author }}</div>
                 <div class="bio">
@@ -82,7 +82,7 @@ description: 或许是最漂亮的Jekyll主题
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
                     {% endif %}
-                <a href="{{ site.baseurl }}tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+                    <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
                 {% endfor %}
             </section>
             {% endif %}
@@ -95,9 +95,9 @@ description: 或许是最漂亮的Jekyll主题
             <div class="search_result"></div>
         </div>
         {% endif %}
-        
+
     </aside>
-    
+
 </main>
 
 {% include footer.html %}

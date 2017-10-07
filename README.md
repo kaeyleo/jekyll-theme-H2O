@@ -125,7 +125,7 @@ title: '廖柯宇的独立博客' # 你的博客网站标题
 description: '很高兴能在这里与你分享我对技术和生活的思考。' # 站点描述
 keyword: '廖柯宇, 廖柯宇的独立博客, 前端, 设计' # 网站关键词
 url: 'http://liaokeyu.com' # 站点url 
-baseurl: '/'
+baseurl: ''
  
 # Build settings 
 paginate: 6 # 一页放几篇文章
