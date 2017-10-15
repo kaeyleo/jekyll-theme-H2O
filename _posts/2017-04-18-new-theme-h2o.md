@@ -32,7 +32,7 @@ tags: jekyll 前端开发 设计
 
 支持两种主题配色——蓝色和粉色。
 
-![](https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/assets/img/jekyll-theme-h2o-themecolor.jpg?raw=true)
+![](https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/screenshot/jekyll-theme-h2o-themecolor.jpg?raw=true)
 
 ### 侧边栏
 
