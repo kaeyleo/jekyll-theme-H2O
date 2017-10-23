@@ -1,26 +1,49 @@
 ---
 layout: post
-title: 'Hello Jekyll'
-date: 2017-04-18
-author: Jekyll
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
-tags: jekyll
+title: '生日快乐！'
+subtitle: '纪念第一次博客更新'
+date: 2017-11-1
+categories: 随笔
+cover: ''
+tags:GitHub
 ---
 
 > Transform your plain text into static websites and blogs.
 
-### Welcome
+## 这是我的第一个博文
 
-This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.
+第一次建立个人主页，也是第一次更新博客，这个独立博客的生日和我的生日一样是11月1日！
 
-### So what is Jekyll, exactly?Permalink
+本博客主题来自于 [悟空]https://github.com/kaeyleo 的jekyll主题[H2O]https://github.com/kaeyleo/jekyll-theme-H2O
 
-Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like [Markdown](https://daringfireball.net/projects/markdown/)) and our [Liquid](https://github.com/Shopify/liquid/wiki) renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+---
+### 想做的事
+想做游戏开发，也想做UI设计，总是有很多新奇的点子，所以想把这些点子一股脑的分享出来！
 
-### Helpful HintsPermalink
+## 【游戏】
 
-Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.
+有关游戏开发和一些有趣的创意，也许是成熟的游戏分享，也许是零散的点子，成功离不开日常的积累，每天构思一个游戏点子，隔一段时间挑选一个进行扩充。
 
-### Video Test
+还有最近学习了Unity3d引擎，不够还是刚入门，希望以后学的更深入，并分享一些技术
 
-<iframe type="text/html" width="100%" height="385" src="http://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>
+## 【设计】
+
+在大学时期学会的一些PS技术，勤加练习，不要荒废了
+
+##【软件】
+
+目前来说还是专注与学习，不过个人对软件情有独钟，在近期的课程中学了不少新软件的使用，学习的心得做成教程的模式，既可以督促自己学习，还可以分享交流
+# 软件包括：
+- Matlab 矩阵实验室
+- Multisim 电路仿真
+- AutoCad 制图
+- Keil 单片机仿真编程
+- Github 软件项目的托管平台
+
+## 【小说】
+
+本人的小爱好就是平时写写科幻小说啦，在脑中模拟人物各自的命运可以让路上变得不那么无聊，偶尔更新一下小说，但是会持续断更很长时间就是了
+# 计划更新的小说：
+- 《彤熵效应》
+- 《血与油》
+- 《Azul魔法世界》
