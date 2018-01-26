@@ -42,6 +42,9 @@ reward:
   wechatpay: 'http://ray-eldath.image.alimmdn.com/basic/wechatpay.jpg'
   alipay: 'http://ray-eldath.image.alimmdn.com/basic/alipay.jpg'
 
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
 # Share
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']

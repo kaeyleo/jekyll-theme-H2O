@@ -1,3 +1,7 @@
+{% if site.b2t %}
+  {% include b2t.html %}
+{% endif %}
+
 <footer class="g-footer">
   <section>{{ site.title }} ©
   {% assign current = "now" | date: "%Y" | plus: 0%}
