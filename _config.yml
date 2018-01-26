@@ -14,7 +14,7 @@ nav:
 
 # Footer
 footer:
-  since: '2018'
+  since: 2017
 
 # Author 配置博主信息
 author: '廖柯宇'
@@ -69,6 +69,10 @@ kramdown:
   input: GFM
 
 RSS: false
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
