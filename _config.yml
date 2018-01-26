@@ -12,6 +12,10 @@ nav:
   home: '/'
   tags: '/tags.html'
 
+# Footer
+footer:
+  since: '2018'
+
 # Author 配置博主信息
 author: '廖柯宇'
 nickname: '悟空'
