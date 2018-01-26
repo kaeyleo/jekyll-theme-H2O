@@ -122,6 +122,7 @@
     });
   </script>
 
+{% if site.disqus %}
   <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -141,6 +142,11 @@
       (d.head || d.body).appendChild(s);
     })();
 
+</script>
+{% endif %}
+
+{% if site.livere %}
+<script>
     (function(d, s) {
       var j, e = d.getElementsByTagName(s)[0];
 
@@ -154,9 +160,11 @@
 
       e.parentNode.insertBefore(j, e);
     })(document, 'script');
+
   </script>
-  <noscript>Please enable JavaScript to view the comments powered by Disqus or Livere.</a></noscript>
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+{% endif %}
+
+  <noscript>为正常使用评论功能请激活JavaScript。</noscript>
   <script src="/assets/js/prism.js"></script>
   <script src="/assets/js/index.min.js"></script>
 </body>

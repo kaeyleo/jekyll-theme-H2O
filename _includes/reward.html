@@ -58,7 +58,7 @@ https://github.com/theme-next/hexo-theme-next/blob/e12bb0b27e16072eb82baa4c7dda1
 </style>
 
 <div class="reward">
-  <a class="rewardButton" title="请{{ site.author }}喝杯咖啡？" onclick="var qr = document.querySelector('.QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">赞 赏</a>
+  <a class="rewardButton" title="请{{ site.author }}喝杯咖啡？">赞 赏</a>
 
   <div class="QR" style="display: none;">
     {% if site.reward.reward_comment %}
@@ -82,3 +82,11 @@ https://github.com/theme-next/hexo-theme-next/blob/e12bb0b27e16072eb82baa4c7dda1
     {% endif %}
   </div>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("a.rewardButton").click(function() {
+      $("div.QR").slideToggle()
+    });
+  });
+</script>
