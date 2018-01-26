@@ -35,6 +35,13 @@ disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 livere: true
 livere_uid: XXXXXXXXXXXXXXXXXXXX
 
+# Reward 赞赏功能 by Ray-Eldath
+reward:
+  enable: true
+  reward_comment: '真诚赞赏 手有余香'
+  wechatpay: 'http://ray-eldath.image.alimmdn.com/basic/wechatpay.jpg'
+  alipay: 'http://ray-eldath.image.alimmdn.com/basic/alipay.jpg'
+
 # Share
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']

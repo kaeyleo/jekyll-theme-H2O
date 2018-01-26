@@ -32,6 +32,11 @@
     <article class="markdown-body">
       {{ page.content }}
     </article>
+
+    {% if site.reward.enable %}
+      {% include reward.html %}
+    {% endif %}
+
     {% if site.social-share %}
     <div class="social-share-wrapper">
       <div class="social-share"></div>
@@ -116,6 +121,7 @@
       wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
     });
   </script>
+
   <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -149,7 +155,7 @@
       e.parentNode.insertBefore(j, e);
     })(document, 'script');
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view the comments powered by Disqus or Livere.</a></noscript>
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="/assets/js/prism.js"></script>
   <script src="/assets/js/index.min.js"></script>
