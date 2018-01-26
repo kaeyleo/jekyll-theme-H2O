@@ -28,6 +28,9 @@ nightMode: true
 disqus: false
 disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
+livere: true
+livere_uid: XXXXXXXXXXXXXXXXXXXX
+
 # Share
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
@@ -38,8 +41,9 @@ theme-color: 'default'  # pink or default
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 postPatterns: 'circuitBoard'
 
-# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
+  email: 'mailto:ray.eldath@aol.com'
   weibo: '//weibo.com/lovecolcol'
   juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   instagram: '//www.instagram.com/steveliaocn'
@@ -63,4 +67,4 @@ kramdown:
 RSS: false
 
 # Plugins
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
