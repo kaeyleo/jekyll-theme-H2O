@@ -52,7 +52,7 @@ Using your smartphone to scan the QR Code
 - Search
 - Copyright text on copy event
 
-### Usage 快速开始 
+### Usage 快速开始
 
 首先你需要安装Jekyll，请查看文档: [快速指南](http://jekyll.com.cn/docs/quickstart/)
 
@@ -89,7 +89,7 @@ Using your smartphone to scan the QR Code
 	- [头图底纹](#头图底纹)
 - 高级部分
 	- [自定义](#自定义)
-- 集成服务 
+- 集成服务
 	- [Disqus](#Disqus)
 	- [Share.js](#Share.js)
 
@@ -128,10 +128,10 @@ You can easily get started by modifying _config.yml
 title: '廖柯宇的独立博客' # 你的博客网站标题
 description: '很高兴能在这里与你分享我对技术和生活的思考。' # 站点描述
 keyword: '廖柯宇, 廖柯宇的独立博客, 前端, 设计' # 网站关键词
-url: 'http://liaokeyu.com' # 站点url 
+url: 'http://liaokeyu.com' # 站点url
 baseurl: ''
- 
-# Build settings 
+
+# Build settings
 paginate: 6 # 一页放几篇文章
 paginate_path: 'page:num'
 ```
@@ -178,7 +178,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 ![](screenshot/jekyll-theme-h2o-sideBar.png)
 
-侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。 
+侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。
 
 #### 社交图标
 
@@ -202,7 +202,7 @@ sns属性可选参数：
 微博 | `weibo`
 知乎 | `zhihu`
 推特 | `twitter`
-Instagrame | `instagrame`
+Instagram | `instagram`
 掘金 | `juejin`
 Github | `github`
 豆瓣 | `douban`
@@ -231,7 +231,7 @@ avatar: 'assets/img/avatar.jpg'
 
 ```
 # Tags
-recommend-tags: true 
+recommend-tags: true
 recommend-condition-size: 12
 
 ```
@@ -249,7 +249,7 @@ Tags配置说明：
 
 基于Jekyll服务器生成文章索引文件 `search.json` 为博客提供搜索服务。输入文章标题或与文章标签相关的关键字即可。
 
-搜索功能默认是开启的，以卡片的样式显示在侧边栏底部。如需关闭请将配置文件 `_config.yml` 中 `search ` 属性的值改为 `false` 。 
+搜索功能默认是开启的，以卡片的样式显示在侧边栏底部。如需关闭请将配置文件 `_config.yml` 中 `search ` 属性的值改为 `false` 。
 
 ```
 # Search
@@ -298,7 +298,7 @@ search: true
 
 #### 夜间模式
 
-晚11点至次日凌晨6点自动开启夜间模式。如果不需要，则将配置文件 `_config.yml` 中 `nightMode ` 属性的值改为 `false` 即可。 
+晚11点至次日凌晨6点自动开启夜间模式。如果不需要，则将配置文件 `_config.yml` 中 `nightMode ` 属性的值改为 `false` 即可。
 
 ```
 # Night mode
@@ -359,7 +359,7 @@ postPatterns: 'circuitBoard'
 吃货日常：啃打鸡 | `food`
 土豪必备：钻石| `glamorous`
 圈圈叉叉 | `ticTacToe`
-中国风：云海 | `seaOfClouds` 
+中国风：云海 | `seaOfClouds`
 
 #### 自定义
 

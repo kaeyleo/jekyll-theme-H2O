@@ -12,6 +12,10 @@ nav:
   home: '/'
   tags: '/tags.html'
 
+# Footer
+footer:
+  since: 2017
+
 # Author 配置博主信息
 author: '廖柯宇'
 nickname: '悟空'
@@ -28,6 +32,19 @@ nightMode: true
 disqus: false
 disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
+livere: true
+livere_uid: MTAyMC8yODEwMC80Njcz
+
+# Reward 赞赏功能 by Ray-Eldath
+reward:
+  enable: true
+  reward_comment: '真诚赞赏 手有余香'
+  wechatpay: 'http://ray-eldath.image.alimmdn.com/basic/wechatpay.jpg'
+  alipay: 'http://ray-eldath.image.alimmdn.com/basic/alipay.jpg'
+
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
 # Share
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
@@ -38,8 +55,9 @@ theme-color: 'default'  # pink or default
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 postPatterns: 'circuitBoard'
 
-# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
+  email: 'mailto:ray.eldath@aol.com'
   weibo: '//weibo.com/lovecolcol'
   juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   instagram: '//www.instagram.com/steveliaocn'
@@ -60,7 +78,12 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+# RSS
 RSS: false
 
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
+
 # Plugins
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]

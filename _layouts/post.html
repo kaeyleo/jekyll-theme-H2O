@@ -1,136 +1,180 @@
 <!DOCTYPE html>
 <html>
 {% include post-head.html %}
+
 <body>
-    <!--[if lt IE 10]>
+  <!--[if lt IE 10]>
 <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
 <![endif]-->
-<input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
+  <input id="nm-switch" type="hidden" value="{{ site.nightMode }}"> {% include header.html %}
 
-{% include header.html %}
-
-<header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
+  <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
     <div class="post-wrapper">
-        <div class="post-tags">
-            {% if page.tags.size > 0 %}
-            {% for tag in page.tags  %}
+      <div class="post-tags">
+        {% if page.tags.size > 0 %}
+          {% for tag in page.tags  %}
             <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
-            {% endfor %}
-            {% endif %}
-        </div>
-        <h1>{{ page.title }}</h1>
-        <div class="post-meta">
-            <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
-            <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
-        </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+      <h1>{{ page.title }}</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
+        <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+      </div>
     </div>
     {% if page.cover %}
     <div class="filter"></div>
     <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
-    {% endif %}
-</header>
+      {% endif %}
+  </header>
 
-<div class="post-content">
+  <div class="post-content visible">
     {% if page.subtitle %}
     <h2 class="post-subtitle">{{ page.subtitle }}</h2>
     {% endif %}
+
     <article class="markdown-body">
-        {{ page.content }}
+      {{ page.content }}
     </article>
+
+    {% if site.reward.enable %}
+      {% include reward.html %}
+    {% endif %}
+
     {% if site.social-share %}
     <div class="social-share-wrapper">
-        <div class="social-share"></div>
+      <div class="social-share"></div>
     </div>
     {% endif %}
-</div>
+  </div>
 
-<section class="author-detail">
+  <section class="author-detail">
     <section class="post-footer-item author-card">
-        <div class="avatar">
-            <img src="{{ site.avatar | absolute_url }}" alt="">
-        </div>
-        <div class="author-name" rel="author">{{ site.author }}</div>
-        <div class="bio">
-            <p>{{ site.bio }}</p>
-        </div>
-        {% if site.sns.size > 0 %}
-        <ul class="sns-links">
-            {% for s in site.sns %}
-            <li>
-                <a href="{{ s[1] }}" target="_blank">
+      <div class="avatar">
+        <img src="{{ site.avatar | absolute_url }}" alt="">
+      </div>
+      <div class="author-name" rel="author">{{ site.author }}</div>
+      <div class="bio">
+        <p>{{ site.bio }}</p>
+      </div>
+      {% if site.sns.size > 0 %}
+      <ul class="sns-links">
+        {% for s in site.sns %}
+        <li>
+          <a href="{{ s[1] }}" target="_blank">
                     <i class="iconfont icon-{{ s[0] }}"></i>
                 </a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </section>
     <section class="post-footer-item read-next">
-        {% if page.next.url %}
-        <div class="read-next-item">
-            <a href="{{ page.next.url }}" class="read-next-link"></a>
-            <section>
-                <span>{{ page.next.title }}</span>
-                <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
-            </section>
-            {% if page.next.cover %}
-            <div class="filter"></div>
-            <img src="{{ page.next.cover }}" alt="">
-            {% endif %}
-        </div>
+      {% if page.next.url %}
+      <div class="read-next-item">
+        <a href="{{ page.next.url }}" class="read-next-link"></a>
+        <section>
+          <span>{{ page.next.title }}</span>
+          <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+        </section>
+        {% if page.next.cover %}
+        <div class="filter"></div>
+        <img src="{{ page.next.cover }}" alt="">
         {% endif %}
-        {% if page.previous.url %}
-        <div class="read-next-item">
-            <a href="{{ page.previous.url }}" class="read-next-link"></a>
-            <section>
-                <span>{{ page.previous.title }}</span>
-                <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
-            </section>
-            {% if page.previous.cover %}
-            <div class="filter"></div>
-            <img src="{{ page.previous.cover }}" alt="">
-            {% endif %}
-        </div>
-        {% endif %}
+     </div>
+      {% endif %}
+
+      {% if page.previous.url %}
+      <div class="read-next-item">
+        <a href="{{ page.previous.url }}" class="read-next-link"></a>
+          <section>
+            <span>{{ page.previous.title }}</span>
+            <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+          </section>
+          {% if page.previous.cover %}
+          <div class="filter"></div>
+          <img src="{{ page.previous.cover }}" alt="">
+          {% endif %}
+      </div>
+      {% endif %}
     </section>
+
     {% if site.disqus %}
     <section class="post-footer-item comment">
-        <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
     </section>
     {% endif %}
-</section>
 
-{% include footer.html %}
+    {% if site.livere %}
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}">
+    </section>
+    {% endif %}
+  </section>
 
-<script src="/assets/js/social-share.min.js"></script>
-<script>
+  {% include footer.html %}
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
     socialShare('.social-share', {
-        sites: [{% for i in site.social-share-items %}'{{ i }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
-        wechatQrcodeTitle: "分享到微信朋友圈",
-        wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+      sites: [
+        {% for i in site.social-share-items %}
+          '{{ i }}'
+          {% if forloop.last == false %},
+          {% endif %}
+        {% endfor %}
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
     });
+  </script>
+
+{% if site.disqus %}
+  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      /*写入自己的disqus信息*/
+      s.src = '{{ site.disqus_url }}';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+
 </script>
+{% endif %}
+
+{% if site.livere %}
 <script>
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-/*写入自己的disqus信息*/
-s.src = '{{ site.disqus_url }}';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-<script src="/assets/js/prism.js"></script>
-<script src="/assets/js/index.min.js"></script>
+    (function(d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+
+      if (typeof LivereTower === 'function') {
+        return;
+      }
+
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+
+  </script>
+{% endif %}
+
+  <noscript>为正常使用评论功能请激活JavaScript。</noscript>
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.min.js"></script>
 </body>
+
 </html>
