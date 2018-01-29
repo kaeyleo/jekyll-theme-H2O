@@ -45,6 +45,9 @@ reward:
 # b2t 回到顶部 by Ray-Eldath
 b2t: true
 
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
 # Share
 social-share: true
 social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
