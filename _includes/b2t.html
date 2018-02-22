@@ -10,7 +10,6 @@ refer to:
     opacity: 0.8;
     z-index: 10000;
     display: none;
-    background: #222;
     color: #fff;
     line-height: 22px;
     text-align: center;
@@ -19,10 +18,12 @@ refer to:
     bottom: 30px;
     cursor: pointer;
     font-size: 13px;
-    padding: 0 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 </style>
-<div class="scroll">
+<div class="scroll {{ site.theme-color | prepend: 'bgcolor-' }}">
   <i class="fa fa-arrow-up" aria-hidden="true"></i>
   <span class="scrollpercent">
       <span class="inner"></span>

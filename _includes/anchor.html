@@ -24,7 +24,7 @@ Author: Ray-Eldath
             anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
             anchorIcon.setAttribute("aria-hidden", true)
             anchor.setAttribute("class", "anchor")
-            anchor.setAttribute("href", "#" + node.innerHTML)
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
             
             anchor.onmouseover = function() {
                 this.style.opacity = "0.4"
