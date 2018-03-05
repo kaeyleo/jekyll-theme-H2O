@@ -13,7 +13,6 @@ refer to:
   }
 
   .rewardButton {
-    background-color: #f44236;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
@@ -24,26 +23,16 @@ refer to:
     font-size: 18px;
     padding: 5px 25px;
     text-decoration: none;
+    opacity: 0.8;
   }
-
-  .rewardButton:hover {
-    background-color: #F7877F;
+    
+  .rewardButton:hover{
+    opacity: 1
   }
-
-  .wechat:hover p {
-    animation: roll 0.1s infinite linear;
-    -webkit-animation: roll 0.1s infinite linear;
-    -moz-animation: roll 0.1s infinite linear;
-  }
-
-  .alipay:hover p {
-    animation: roll 0.1s infinite linear;
-    -webkit-animation: roll 0.1s infinite linear;
-    -moz-animation: roll 0.1s infinite linear;
-  }
-
+    
   .QR {
     padding-top: 20px;
+    display: none;
   }
 
   .QR a {
@@ -59,28 +48,31 @@ refer to:
 </style>
 
 <div class="reward">
-  <a class="rewardButton" title="请{{ site.author }}喝杯咖啡？">赞 赏</a>
+  <a class="rewardButton {{ site.theme-color | prepend: 'bgcolor-' }}" title="请{{ site.author }}喝杯咖啡？">赞 赏</a>
 
-  <div class="QR" style="display: none;">
+  <div class="QR">
     {% if site.reward.reward_comment %}
     <div>
       <span style="font-family: '微软雅黑'; font-size: 18px; ">{{ site.reward.reward_comment }}</span>
     </div>
     {% endif %}
 
-    {% if site.reward.wechatpay %}
-    <div class="wechat" style="display: inline-block">
-      <img class="wechat_qr" src="{{ site.reward.wechatpay }}" title="用微信请{{ site.author }}喝杯咖啡？" alt="用微信请{{ site.author }}喝杯咖啡？" />
-      <p>微信支付</p>
-    </div>
-    {% endif %}
+    <div class="reward-outer">
+        {% if site.reward.wechatpay %}
+        <div class="wechat" style="display: inline-block">
+            <img class="wechat_qr" src="{{ site.reward.wechatpay }}" title="用微信请{{ site.author }}喝杯咖啡？" alt="用微信请{{ site.author }}喝杯咖啡？" />
+            <p>微信支付</p>
+        </div>
+        {% endif %}
 
-    {% if site.reward.alipay %}
-    <div class="alipay" style="display: inline-block">
-      <img class="alipay_qr" src="{{ site.reward.alipay }}" title="用支付宝请{{ site.author }}喝杯咖啡？" alt="用支付宝请{{ site.author }}喝杯咖啡？" />
-      <p>支付宝</p>
+        {% if site.reward.alipay %}
+        <div class="alipay" style="display: inline-block">
+            <img class="alipay_qr" src="{{ site.reward.alipay }}" title="用支付宝请{{ site.author }}喝杯咖啡？" alt="用支付宝请{{ site.author }}喝杯咖啡？" />
+            <p>支付宝</p>
+        </div>
+        {% endif %}
     </div>
-    {% endif %}
+      
   </div>
 </div>
 

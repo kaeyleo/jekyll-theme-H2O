@@ -7,24 +7,28 @@ refer to:
 -->
 <style media="screen">
   .scroll {
+    opacity: 0.8;
     z-index: 10000;
     display: none;
-    width: 56px;
-    height: 24px;
-    background: #222;
     color: #fff;
-    line-height: 24px;
+    line-height: 22px;
     text-align: center;
     position: fixed;
     right: 30px;
     bottom: 30px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 </style>
-<div class="scroll">
-  <i class="fa fa-arrow-up"></i>
-  <span class="scrollpercent"></span><span> %</span>
+<div class="scroll {{ site.theme-color | prepend: 'bgcolor-' }}">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  <span class="scrollpercent">
+      <span class="inner"></span>
+      %
+    </span>
 </div>
 
 <script src="/assets/js/util.js"></script>
@@ -40,7 +44,7 @@ refer to:
       var scrollPercentRounded = Math.round((scrollValue / utils.getContentVisibilityHeight()) * 100);
       var scrollPercentMaxed = (scrollPercentRounded > 100) ? 100 : scrollPercentRounded;
 
-      $('.scrollpercent').html(scrollPercentMaxed);
+      $('.scrollpercent .inner').html(scrollPercentMaxed);
       scrollValue > 100 ? $('.scroll').fadeIn() : $('.scroll').fadeOut();
     });
 

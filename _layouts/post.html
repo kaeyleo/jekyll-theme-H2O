@@ -25,8 +25,8 @@
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
-      {% endif %}
+      <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;"></div>
+    {% endif %}
   </header>
 
   <div class="post-content visible">
@@ -99,18 +99,65 @@
       </div>
       {% endif %}
     </section>
-
-    {% if site.disqus %}
+      
     <section class="post-footer-item comment">
-      <div id="disqus_thread"></div>
+        {% if site.comments.default_hidden %}
+        <button class="comment-button" type="button">
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            <span class="comment-button-span">展开评论</span>
+        </button>
+        {% endif %}
+        
+        <div class="comment-inner">
+            {% if site.comments.disqus %}
+            <div id="disqus_thread"></div>
+            {% endif %}
+        
+            {% if site.comments.livere %}
+            <div id="lv-container" data-id="city" data-uid="{{ site.comments.livere_uid }}"></div>
+            {% endif %}
+        </div>
     </section>
+      
+    {% if site.comments.default_hidden %}
+    <style>
+        .comment button{
+            margin-bottom: 40px;
+            width: 100%;
+            background: none;
+            border-style: solid hidden solid hidden;
+            font-size: 18px;
+            height: 40px;
+            opacity: 0.5;
+        }
+        
+        .comment button:hover{
+            opacity: 0.9
+        }
+        
+        .comment button span{
+            padding-left: 5px;
+            letter-spacing: 20px;
+            line-height: 40px;
+        }
+        
+        .comment-inner {
+            display: none
+        }
+    </style>
+      
+    <script>
+    $(document).ready(function() {
+        let clicked = false
+        $(".comment-button").click(function() {
+            $(".comment-inner").slideToggle()
+            clicked = !clicked
+            $(".comment-button-span").html(clicked ? "收起评论" : "展开评论")
+        })
+    })
+    </script>
     {% endif %}
-
-    {% if site.livere %}
-    <section class="post-footer-item comment">
-      <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}">
-    </section>
-    {% endif %}
+    
   </section>
 
   {% include footer.html %}
@@ -130,8 +177,8 @@
     });
   </script>
 
-{% if site.disqus %}
   <script>
+    {% if site.comments.disqus %}
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -144,17 +191,14 @@
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document,
         s = d.createElement('script');
-      /*写入自己的disqus信息*/
-      s.src = '{{ site.disqus_url }}';
+      s.src = '{{ site.comments.disqus_url }}';
       s.setAttribute('data-timestamp', +new Date());
+    
       (d.head || d.body).appendChild(s);
     })();
-
-</script>
-{% endif %}
-
-{% if site.livere %}
-<script>
+    {% endif %}
+    
+    {% if site.comments.livere %}
     (function(d, s) {
       var j, e = d.getElementsByTagName(s)[0];
 
@@ -168,9 +212,8 @@
 
       e.parentNode.insertBefore(j, e);
     })(document, 'script');
-
-  </script>
-{% endif %}
+    {% endif %}
+</script>
 
   <noscript>为正常使用评论功能请激活JavaScript。</noscript>
   <script src="/assets/js/prism.js"></script>

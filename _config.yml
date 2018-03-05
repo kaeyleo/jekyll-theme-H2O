@@ -28,12 +28,15 @@ search: true
 # Night mode
 nightMode: true
 
-# Comments
-disqus: false
-disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+# Comments 评论功能
+#   default_hidden：是否默认隐藏评论。若是则需要点击一按钮后才显示。 by Ray-Eldath
+comments:
+  default_hidden: true
+  disqus: false
+  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
-livere: true
-livere_uid: MTAyMC8yODEwMC80Njcz
+  livere: true
+  livere_uid: MTAyMC8yODEwMC80Njcz
 
 # Reward 赞赏功能 by Ray-Eldath
 reward:
@@ -44,6 +47,9 @@ reward:
 
 # b2t 回到顶部 by Ray-Eldath
 b2t: true
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
 
 # Share
 social-share: true
