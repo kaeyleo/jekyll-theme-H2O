@@ -29,24 +29,9 @@ search: true
 nightMode: true
 
 # Comments 评论功能
-#   default_hidden：是否默认隐藏评论。若是则需要点击一按钮后才显示。 by Ray-Eldath
 comments:
-  default_hidden: true
   disqus: false
   disqus_url: 'https://liaokeyu.disqus.com/embed.js'
-
-  livere: true
-  livere_uid: MTAyMC8yODEwMC80Njcz
-
-# Reward 赞赏功能 by Ray-Eldath
-reward:
-  enable: true
-  reward_comment: '真诚赞赏 手有余香'
-  wechatpay: 'http://ray-eldath.image.alimmdn.com/basic/wechatpay.jpg'
-  alipay: 'http://ray-eldath.image.alimmdn.com/basic/alipay.jpg'
-
-# b2t 回到顶部 by Ray-Eldath
-b2t: true
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
@@ -61,9 +46,9 @@ theme-color: 'default'  # pink or default
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 postPatterns: 'circuitBoard'
 
-# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+# SNS settings 配置社交网站
+# url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  email: 'mailto:ray.eldath@aol.com'
   weibo: '//weibo.com/lovecolcol'
   juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   instagram: '//www.instagram.com/steveliaocn'
