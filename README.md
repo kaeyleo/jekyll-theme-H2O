@@ -58,6 +58,8 @@ Using your smartphone to scan the QR Code
 
 如果你已经安装了Jekyll，请检查版本是否为3.0.x，你可以使用 ```gem update jekyll``` 命令进行升级。
 
+使用 ```gem install jekyll-paginate``` 或 ```sudo gem install jekyll-paginate``` 安装Jekyll的分页插件。
+
 > H2O主题基于Jekyll 3.2.1版本，不同版本之间可能存在部分差异，具体请参考[官方更新文档](https://jekyllrb.com/news/)
 
 点击右上角Fork按钮在你的Github上创建分支，或者```clone```到本地。
@@ -438,6 +440,13 @@ social-share-items: ['wechat', 'weibo', 'douban','twitter']
 Any types of contribution are welcome. Thanks.
 
 接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 ```Pull Request```
+
+#### 感谢参与代码贡献的伙伴
+
+- [Ray-Eldath](https://github.com/Ray-Eldath)
+- [sctop](https://github.com/sctop)
+- [bananaappletw](https://github.com/bananaappletw)
+- [moycat](https://github.com/moycat)
 
 ### License 许可证
 
