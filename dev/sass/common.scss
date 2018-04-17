@@ -47,10 +47,10 @@
             background-color: rgba(255, 255, 255, .2);
         }
     }
-    
+
     .g-nav {
         float: right;
-        margin-right: 2%; 
+        margin-right: 2%;
         &>ul>li{
             float: left;
             height: $g-header-h;
@@ -280,12 +280,12 @@
     ::-webkit-input-placeholder {
         color: #9EA8B3;
     }
-    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
-        color: #9EA8B3; 
-    } 
-    ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
-        color: #9EA8B3; 
-    } 
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #9EA8B3;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #9EA8B3;
+    }
     .icon-search {
         position: absolute;
         top: 10px;
@@ -388,7 +388,7 @@
             &:hover {
                 color: #83888F;
             }
-            
+
         }
     }
 }
@@ -397,7 +397,7 @@
     margin: 0 auto;
 }
 .post-wrapper {
-    width: $post-content-w;  
+    width: $post-content-w;
 }
 
 .post-header {
@@ -530,7 +530,7 @@
             background-color: #EAECEE;
         }
         &:before {
-            top: 0;    
+            top: 0;
         }
         &:after {
             bottom: 0;
@@ -701,7 +701,7 @@
             }
         }
     }
-    
+
 }
 
 // 404 page
@@ -755,8 +755,8 @@
         }
     }
 
-    .article-item, .g-sidebar, .page-links, .search-card input, .search_result, 
-    .search_item, .article-item .post-tag, .tags-card .tag, .tags-list li, 
+    .article-item, .g-sidebar, .page-links, .search-card input, .search_result,
+    .search_item, .article-item .post-tag, .tags-card .tag, .tags-list li,
     .tags-list .tag {
         color: $color-f-dark;
         background-color: $color-dark-secondary;
@@ -765,7 +765,7 @@
 
     .article-item {
         .post-cover img {
-             -webkit-filter: brightness(.6);
+            -webkit-filter: brightness(.6);
         }
         .post-preview {
             .post-title, .post-subtitle, .post-excerpt {
@@ -839,7 +839,7 @@
             }
         }
     }
-    
+
     .markdown-body {
         color: $color-f-dark;
         img {
@@ -861,15 +861,15 @@
     :not(pre) > code[class*="language-"], pre[class*="language-"] {
         background-color: $color-dark-secondary;
     }
-    code[class*="language-"], pre[class*="language-"], .token.punctuation, 
-    .token.operator, .token.entity, .token.url, .language-css .token.string, 
+    code[class*="language-"], pre[class*="language-"], .token.punctuation,
+    .token.operator, .token.entity, .token.url, .language-css .token.string,
     .style .token.string, .token.variable {
         color: #8F97A7;
     }
     .token.atrule, .token.attr-value, .token.function {
         color: #A9A054;
     }
-    .token.selector, .token.attr-name, .token.string, .token.char, 
+    .token.selector, .token.attr-name, .token.string, .token.char,
     .token.builtin, .token.inserted {
         color: #84AC35;
     }
