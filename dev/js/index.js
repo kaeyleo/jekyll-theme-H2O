@@ -157,10 +157,11 @@ $(document).ready(function(){
         input.keyup(debounce(this.autoComplete));
 
         $(document).click(function(e) {
-            if (e.target.id !== 'search_input' || e.target.className !== 'search_result' || e.target.className !== 'search_item') {
-                $('.icon-search').css('color', '#CAD3DC');
-                result.hide();
+            if(e.target.id === 'search_input' || e.target.className === 'search_result' || e.target.className === 'search_item') {
+                return;
             }
+            $('.icon-search').css('color', '#CAD3DC');
+            result.hide();
         });
     }
 
@@ -198,8 +199,8 @@ $(document).ready(function(){
             var ctx = this;
             var args = arguments;
             var later = function() {
-                    fn.apply(ctx, args);
-                };
+                fn.apply(ctx, args);
+            };
             clearTimeout(timer);
             timer = setTimeout(later, delay);
         };
