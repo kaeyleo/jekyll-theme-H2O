@@ -298,10 +298,10 @@
     .search_result {
         position: relative;
         margin-top: -2px;
-        max-height: 230px;
+        // max-height: 230px;
         background-color: #fff;
         border-radius: 0 0 4px 4px;
-        overflow: scroll;
+        // overflow: scroll;
         z-index: 0;
     }
     .search_item {
