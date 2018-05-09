@@ -30,8 +30,12 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: false
+  # 社会化评论类型 默认disqus、livere
+  type: ''
+  # 如果为disqus设置此处的disqus地址
   disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  # 如果为livere设置分配的livere的id
+  livere_id: 'Your LiveRe Id'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
