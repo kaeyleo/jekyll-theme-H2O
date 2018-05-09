@@ -418,7 +418,7 @@ postPatterns: 'circuitBoard'
 在配置文件 `_config.yml` 中找到 `comments` 的相关配置，设置 `type` 参数为 `disqus` 打开评论功能，并且设置 `disqus_url`。
 
 #### LiveRe
-[LiveRe](https://livere.com/)是一个 **韩国公司** 开发的第三方社交评论插件，因为畅言需要备案，国内比较好用的目前就找到这个，不喜欢的还是需要自备梯子使用Disqus。
+[LiveRe](https://livere.com/)是一个 **韩国公司** 开发的第三方社交评论插件，因为畅言需要备案，国内比较好用的目前就找到这个，不喜欢的话还是需要自备梯子使用Disqus。
 
 模板默认设置的是 `disqus` ，如果需要开启 `livere` 需要将配置文件 `_config.yml` 中的相关配置修改为 `livere`，并且需要设置 `livere_id` ， `livere_id` 可以在申请的地方找到位于第一行 `div` 的 `data-uid` 的值
 
