@@ -96,7 +96,26 @@
       {% endif %}
     </section>
     <section class="post-footer-item comment">
+      {% if site.comments.type == 'disqus' %}
       <div id="disqus_thread"></div>
+      {% elsif site.comments.type == 'livere' %}
+      <!-- livere City install -->
+      <div id="lv-container" data-id="city" data-uid="{{ site.comments.livere_id }}">
+        <script type="text/javascript">
+          (function(d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+        
+              if (typeof LivereTower === 'function') { return; }
+        
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+        
+              e.parentNode.insertBefore(j, e);
+          })(document, 'script');
+        </script>
+      </div>
+      {% endif %}
     </section>
   </section>
 
@@ -118,7 +137,7 @@
   </script>
 
   <script>
-    {% if site.comments.disqus %}
+    {% if site.comments.type == 'disqus' %}
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
