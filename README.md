@@ -415,7 +415,7 @@ postPatterns: 'circuitBoard'
 
 模板默认不开启评论插件，如需关闭请在 `_config.yml` 中配置参数 `disqus` (开启Disqus) 或者其他值 :  
 
-在配置文件 `_config.yml` 中找到Comments的相关配置，设置 `type` 参数为 `disqus` 打开评论功能，并且设置 `disqus_url`。
+在配置文件 `_config.yml` 中找到 `comments` 的相关配置，设置 `type` 参数为 `disqus` 打开评论功能，并且设置 `disqus_url`。
 
 #### LiveRe
 [LiveRes](https://livere.com/)是一个 *韩国公司* 开发的第三方社交评论插件，因为畅言需要备案，国内比较好用的目前就找到这个，不喜欢的还是需要自备梯子使用Disqus。
