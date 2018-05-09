@@ -426,10 +426,10 @@ postPatterns: 'circuitBoard'
 # Comments
 type: ‘’
 disqus_url: 'https://你的disqus账户名.disqus.com/embed.js'
-livere_id: '你的livere_id的'
+livere_id: '你的livere_id'
 ```
 
-注：`disqus` 默认值为空
+注：`type` 默认值为空
 
 #### Share.js
 
