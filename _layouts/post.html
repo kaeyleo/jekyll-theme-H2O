@@ -117,8 +117,8 @@
     });
   </script>
 
+  {% if site.comments.disqus %}
   <script>
-    {% if site.comments.disqus %}
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -136,8 +136,8 @@
 
       (d.head || d.body).appendChild(s);
     })();
-    {% endif %}
   </script>
+  {% endif %}
 
   <script src="/assets/js/prism.js"></script>
   <script src="/assets/js/index.min.js"></script>
