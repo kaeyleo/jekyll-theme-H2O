@@ -1,0 +1,49 @@
+---
+title: 'About Me'
+layout: default
+---
+
+<!-- Added by urain39@cyfan.cf -->
+
+{% include header.html %}
+
+<div class="g-banner home-banner post-pattern-circuitBoard bgcolor-default" style="height: 400px" data-theme="default">
+    <h2>ABOUT ME</h2>
+</div>
+
+<main class="g-container home-content">
+    <div class="article-list">
+                <h2 style="padding: 16px">About Me</h2>
+
+                <article class="article-item">
+                    <section>
+                        <ul>
+                            <!-- sns[0] = key 
+                                 sns[1] = value
+                            -->
+                            {% for sns in site.sns %}
+                            <li>
+                                <p style="padding: 8px">
+                                    <strong>{{ sns[0] | capitalize }}: </strong><a href="{{ sns[1] }}">@{{ site.author }}</a>
+                                </p>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                </article>
+
+                <h2 style="padding: 16px">Friendly links</h2>
+                {% for friend in site.friends %}
+                <article class="article-item">
+                    <a href="{{ friend.link }}"><b>{{ friend.name }}</b></a>
+
+                    <section>
+                        <p style="text-align: right">{{ friend.desc }}</p>
+                    </section>
+                </article>
+                {% endfor %}
+
+    </div>
+</main>
+
+{% include footer.html %}
