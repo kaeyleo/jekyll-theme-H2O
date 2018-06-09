@@ -78,3 +78,9 @@ permalink: /:year/:month/:day/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
+
+# Friends
+friends:
+  - name: 'kaeyleo'
+    link: 'http://liaokeyu.com/'
+    desc: 'H2O主题作者。'
