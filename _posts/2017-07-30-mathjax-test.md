@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 公式测试
+title: MathJax Test
 date: 2017-07-30
-categories: 测试
-tags: 测试
+categories: test
+tags: mathjax 
 ---
+
+mathjax in markdown :)
 
 **这是一个不`align`的公式**：
 

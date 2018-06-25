@@ -208,6 +208,7 @@
                 font-size: 16px;
                 font-family: 'Merriweather-Light', $fonts;
                 line-height: 26px;
+                word-break: break-all;
             }
         }
         .post-meta {

@@ -229,7 +229,8 @@ a {
         margin-top: 8px;
         font-size: 16px;
         font-family: "Merriweather-Light", -apple-system, Verdana, "PingFang SC", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-        line-height: 26px; }
+        line-height: 26px;
+        word-break: break-all; }
     .article-list .article-item .post-meta {
       height: 22px;
       margin-top: 16px; }
