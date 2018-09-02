@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: '力小刀1'
+title: '力小刀'
 description: '力小刀2'
 keyword: '力小刀3'
 url: 'https://lancc313.github.io/' # your host
@@ -17,9 +17,9 @@ footer:
   since: 2017
 
 # Author 配置博主信息
-author: '力小刀4'
+author: '力小刀'
 nickname: '力小刀5'
-bio: '力小刀6'
+bio: '理想主义者'
 avatar: '/assets/img/profile.png'
 
 # Search
