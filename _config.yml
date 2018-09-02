@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: '廖柯宇的独立博客'
-description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
-url: 'http://liaokeyu.com' # your host
+title: '力小刀'
+description: '力小刀2'
+keyword: '力小刀3'
+url: 'https://lancc313.github.io/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
@@ -17,9 +17,9 @@ footer:
   since: 2017
 
 # Author 配置博主信息
-author: '廖柯宇'
-nickname: '悟空'
-bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
+author: '力小刀'
+nickname: '力小刀5'
+bio: '理想主义者'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -38,7 +38,7 @@ mathjax: true
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['email', 'weibo', 'zhihu', 'jianshu']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
@@ -49,10 +49,10 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  weibo: '//weibo.com/lovecolcol'
-  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-  instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/kaeyleo'
+  email: '//335019759@qq.com'
+  weibo: '//juejin.im/user/57a6f434165abd006159b4cc'
+  zhihu: '//www.instagram.com/steveliaocn'
+  jianshu: '//github.com/kaeyleo'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
