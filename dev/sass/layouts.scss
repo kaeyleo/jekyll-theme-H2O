@@ -131,9 +131,6 @@
         h3 {
             margin-top: 8px;
         }
-        .header-img {
-            width: 695px;
-        }
     }
     .home-content {
         margin-top: 0;
@@ -144,7 +141,7 @@
     .tags-content {
         margin-top: 0;
     }
-    .tags-banner { 
+    .tags-banner {
         height: 300px;
     }
     .tags-list {
@@ -169,10 +166,6 @@
             margin-top: 2px;
             font-size: 18px;
             letter-spacing: 6px;
-        }
-        .header-img {
-            width: 695px;
-            left: -100px;
         }
     }
     .home-content {
@@ -274,7 +267,7 @@
     }
 }
 
-@media screen and (max-width: 376px) { 
+@media screen and (max-width: 376px) {
     .home-banner {
         h2 {
             font-size: 26px;
@@ -283,10 +276,6 @@
         h3 {
             margin-top: 4px;
             font-size: 16px;
-        }
-        .header-img {
-            width: 695px;
-            left: -100px;
         }
     }
 

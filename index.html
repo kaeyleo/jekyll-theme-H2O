@@ -6,12 +6,13 @@ description: 或许是最漂亮的Jekyll主题
 
 {% include header.html %}
 
-<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
+<div
+    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
+    data-theme="{{ site.theme-color }}"
+    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
+>
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
-    {% if page.header-img %}
-    <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
-    {% endif %}
 </div>
 
 <main class="g-container home-content">
