@@ -70,7 +70,7 @@ $post-content-w: 720px;
 
 @mixin authorCard {
     text-align: center;
-    
+
     .avatar {
         width: 70px;
         height: 70px;
@@ -182,7 +182,7 @@ $post-content-w: 720px;
     .icon-medium:hover {
         color: #0BE370;
     }
-    
+
 }
 
 @mixin postHeaderPattern($shape) {

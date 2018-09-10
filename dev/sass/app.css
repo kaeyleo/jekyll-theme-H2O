@@ -292,8 +292,8 @@ a {
       .author-card .sns-links li .iconfont {
         color: #B8BDC3;
         transition: .2s; }
-        .author-card .sns-links li .iconfont:hover {
-          color: #7B848F; }
+      .author-card .sns-links li .iconfont:hover {
+        color: #7B848F; }
       .author-card .sns-links li .icon-weibo:hover {
         color: #F85555; }
       .author-card .sns-links li .icon-zhihu:hover {
@@ -310,7 +310,7 @@ a {
         color: #575757; }
       .author-card .sns-links li .icon-facebook:hover {
         color: #3D5A9A; }
-      .author-card .sns-links li .icon-dribble:hover {
+      .author-card .sns-links li .icon-dribbble:hover {
         color: #F26798; }
       .author-card .sns-links li .icon-jianshu:hover {
         color: #EA6F5A; }
@@ -320,6 +320,12 @@ a {
         color: #3181BE; }
       .author-card .sns-links li .icon-medium:hover {
         color: #0BE370; }
+      .author-card .sns-links li .icon-behance:hover {
+        color: #0057ff; }
+      .author-card .sns-links li .icon-youtube:hover {
+        color: #FF2600; }
+      .author-card .sns-links li .icon-vk:hover {
+        color: #5181b8; }
 
 .article-item .post-meta .post-tag, .tags-card .tag, .tags-content .tag {
   display: inline-block;
