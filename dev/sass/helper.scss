@@ -104,6 +104,7 @@ $post-content-w: 720px;
             display: inline-block;
             width: 26px;
             height: 26px;
+            overflow: hidden;
             a {
                 display: inline-block;
             }
@@ -167,7 +168,7 @@ $post-content-w: 720px;
     .icon-facebook:hover {
         color: #3D5A9A;
     }
-    .icon-dribble:hover {
+    .icon-dribbble:hover {
         color: #F26798;
     }
     .icon-jianshu:hover {
@@ -181,6 +182,15 @@ $post-content-w: 720px;
     }
     .icon-medium:hover {
         color: #0BE370;
+    }
+    .icon-youtube:hover {
+        color: #FF2600;
+    }
+    .icon-behance:hover {
+        color: #0057ff;
+    }
+    .icon-vk:hover {
+        color: #5181b8;
     }
 
 }
