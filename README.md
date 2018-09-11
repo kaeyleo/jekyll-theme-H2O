@@ -92,8 +92,8 @@ Using your smartphone to scan the QR Code
 - 高级部分
 	- [自定义](#自定义)
 - 集成服务
-	- [Disqus](#Disqus)
-	- [Share.js](#Share.js)
+	- [Disqus](#disqus)
+	- [Share.js](#sharejs)
 
 #### EN
 
@@ -430,7 +430,7 @@ disqus_url: 'https://你的disqus账户名.disqus.com/embed.js'
 
 #### Share.js
 
-为了让文章更方便地分享，使用了第三方分享插件[Share.js](http://overtrue.me/share.js/)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。
+为了让文章更方便地分享，使用了第三方分享插件[Share.js](https://github.com/overtrue/share.js)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。
 
 ```
 # Share
