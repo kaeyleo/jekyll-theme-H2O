@@ -98,9 +98,11 @@
       </div>
       {% endif %}
     </section>
+    {% if site.comments.disqus %}
     <section class="post-footer-item comment">
-      <div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
     </section>
+    {% endif %}
   </section>
 
   {% include footer.html %}
@@ -132,11 +134,9 @@
     };
     */
     (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      s.src = '{{ site.comments.disqus_url }}';
+      var d = document, s = d.createElement('script');
+      s.src = 'https://liaokeyu.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
-
       (d.head || d.body).appendChild(s);
     })();
   </script>
