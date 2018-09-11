@@ -1,3 +1,31 @@
+# PR內容
+
+參考[jekyll-toc](https://github.com/toshimaru/jekyll-toc#generated-table-of-contents-html)，自動生成toc
+
+![](screenshot/toc-demo.png)
+
+## 優點
+自動生成，我只需要在文章的YAML加上toc: true即可。
+
+```
+---
+layout: post
+title:  "你的標題"
+date:   2018-09-10 02:20:20 +0800 
+toc: true
+tag: ["Mac To Win10", "Win10軟體"]
+---
+```
+
+## 安裝
+
+`sudo gem install jekyll-toc`  
+> 這個安裝過程滿久的  
+
+---
+
+# 以下是專案原文
+
 ## jekyll-theme-H2O
 
 基于Jekyll的博客主题模板，简洁轻量。
@@ -59,6 +87,8 @@ Using your smartphone to scan the QR Code
 如果你已经安装了Jekyll，请检查版本是否为3.0.x，你可以使用 ```gem update jekyll``` 命令进行升级。
 
 使用 ```gem install jekyll-paginate``` 或 ```sudo gem install jekyll-paginate``` 安装Jekyll的分页插件。
+
+使用`sudo gem install jekyll-toc` 安装toc插件
 
 > H2O主题基于Jekyll 3.2.1版本，不同版本之间可能存在部分差异，具体请参考[官方更新文档](https://jekyllrb.com/news/)
 
