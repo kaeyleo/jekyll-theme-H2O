@@ -539,7 +539,7 @@
     padding: 0 0 32px;
     .highlight {
         margin: 0 0 16px;
-        overflow: scroll;
+        /** overflow: scroll;  修复代码高亮 显示两个 scroll的问题 **/ 
     }
     img {
         transition: .3s;
