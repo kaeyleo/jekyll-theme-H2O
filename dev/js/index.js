@@ -244,5 +244,12 @@ $(document).ready(function(){
             setClipboardData(txt);
         }
     });
-
 });
+
+function showLines() {
+    if ( $('pre').length > 0 ) {
+        $('pre').addClass("line-numbers").css("white-space", "pre-wrap");
+    };
+};
+// prims   显示行号
+showLines();

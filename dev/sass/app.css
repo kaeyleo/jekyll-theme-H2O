@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Jekyll Theme Style
  * - author: liaokeyu (liaokeyu.com)
@@ -626,7 +627,7 @@ a {
   padding: 0 0 32px; }
   .markdown-body .highlight {
     margin: 0 0 16px;
-    overflow: scroll; }
+    /** overflow: scroll;  修复代码高亮 显示两个 scroll的问题 **/ }
   .markdown-body img {
     transition: .3s; }
   .markdown-body ul li p, .markdown-body ol li p {
