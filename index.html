@@ -2,6 +2,17 @@
 layout: home
 ---
 
+<header>
+  <a class="logo" href="/">H2O</a>
+  <nav>
+    {% for page in site.pages %}
+    {% if page.title and page.isnav %}
+    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+    {% endfor %}
+  </nav>
+</header>
+
 <main>
   <div class="post-list">
     {% for post in paginator.posts %}

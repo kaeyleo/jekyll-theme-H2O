@@ -5,14 +5,14 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 keyword: ""
 description: "A clean and delicate Jekyll theme."
 
-# Build settings
+# build settings
 plugins: [jekyll-paginate]
 exclude: ['node_modules', 'package.json', '.gitignore', 'README.md']
 
 paginate: 6
 paginate_path: 'page:num'
 
-# Markdown
+# markdown
 markdown: kramdown
 highlighter: rouge
 kramdown:
