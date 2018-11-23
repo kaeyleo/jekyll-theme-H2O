@@ -2,10 +2,10 @@
 title: '廖柯宇的独立博客'
 description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
-url: 'https://dyzsoft.github.io/jekyll-theme-H2O/' # your host
+url: '' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: 'https://dyzsoft.github.io/jekyll-theme-H2O/'
+baseurl: ''
 
 # Navigation links
 nav:
