@@ -1,0 +1,6 @@
+_site
+_post/*.md
+node_modules
+.DS_Store
+*/.DS_Stor
+.vscode

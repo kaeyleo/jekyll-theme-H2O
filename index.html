@@ -1,0 +1,13 @@
+---
+layout: home
+---
+
+<main>
+  <div class="post-list">
+    {% for post in paginator.posts %}
+    <div class="post">
+      <h3 class="post-title">{{ post.title }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+</main>
