@@ -23,4 +23,11 @@ gulp.task('styles', () =>
   .pipe(gulp.dest('assets'))
 )
 
-gulp.task('default', gulp.parallel('scripts', 'styles'))
+gulp.task('watch', () => {
+  gulp.watch('dev/script/*.js', gulp.series('scripts'))
+  gulp.watch('dev/style/*.scss', gulp.series('styles'))
+})
+
+gulp.task('default', gulp.parallel('scripts', 'styles', 'watch'))
+
+// gulp.watch('dev/script/*.js', () => {})
