@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, textarea, 
+form, label, legend, table, caption, menu, nav, section, summary, 
+time, mark, audio, video, iframe, main, header, footer {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0 none;
+}
+
+body {
+  font-family: $fonts;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+::selection {
+  background-color: rgba(0, 147, 254, .2);
+}
+// ::-moz-selection {
+//   background-color: rgba(0, 147, 254, .2);
+// }
+// ::-webkit-selection {
+//   background-color: rgba(0, 147, 254, .2);
+// }

@@ -7,7 +7,7 @@ description: "A clean and delicate Jekyll theme."
 
 # build settings
 plugins: [jekyll-paginate]
-exclude: ['node_modules', 'package.json', '.gitignore', 'README.md']
+exclude: ['node_modules', 'dev', 'dist', 'package.json', 'package-lock.json', '.gitignore', 'README.md', 'LICENSE']
 
 paginate: 6
 paginate_path: 'page:num'

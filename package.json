@@ -1,0 +1,36 @@
+{
+  "name": "jekyll-theme-h2o",
+  "version": "0.1.0",
+  "description": "A clean and delicate Jekyll theme.",
+  "scripts": {
+    "build:css": "npm run scss",
+    "build:js": "npm run babel && npm run uglify",
+    "scss": "rm dist/style.css && node-sass --output-style compressed -o dist dev/style.scss",
+    "babel": "babel dev/main.js --out-file dist/main.js",
+    "uglify": "uglifyjs dist/main.js -m -o assets/main.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaeyleo/jekyll-theme-H2O.git"
+  },
+  "keywords": [
+    "jekyll",
+    "theme"
+  ],
+  "author": "Keyu Liao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaeyleo/jekyll-theme-H2O/issues"
+  },
+  "homepage": "https://github.com/kaeyleo/jekyll-theme-H2O#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
