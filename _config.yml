@@ -5,7 +5,7 @@ keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前�
 url: '' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: '/blog'
+baseurl: ''
 
 # Navigation links
 nav:
