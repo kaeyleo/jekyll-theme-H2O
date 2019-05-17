@@ -16,7 +16,7 @@
       <div class="post-tags">
         {% if page.tags.size > 0 %}
           {% for tag in page.tags  %}
-            <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
+            <a href="{{ "/tags.html#" | append: tag | prepend: site.baseurl }}" class="post-tag">{{ tag }}</a>
           {% endfor %}
         {% endif %}
       </div>
@@ -51,7 +51,7 @@
   <section class="author-detail">
     <section class="post-footer-item author-card">
       <div class="avatar">
-        <img src="{{ site.avatar | absolute_url }}" alt="">
+        <img src="{{ site.avatar | prepend: site.baseurl }}" alt="">
       </div>
       <div class="author-name" rel="author">{{ site.author }}</div>
       <div class="bio">
@@ -107,7 +107,7 @@
 
   {% include footer.html %}
 
-  <script src="/assets/js/social-share.min.js"></script>
+  <script src="{{ "/sub/page/" | relative_url }}/assets/js/social-share.min.js"></script>
   <script>
     socialShare('.social-share', {
       sites: [
@@ -142,8 +142,8 @@
   </script>
   {% endif %}
 
-  <script src="/assets/js/prism.js"></script>
-  <script src="/assets/js/index.min.js"></script>
+  <script src="{{ "/sub/page/" | relative_url }}/assets/js/prism.js"></script>
+  <script src="{{ "/sub/page/" | relative_url }}/assets/js/index.min.js"></script>
 </body>
 
 </html>

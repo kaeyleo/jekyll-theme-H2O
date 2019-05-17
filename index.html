@@ -39,7 +39,7 @@ description: 或许是最漂亮的Jekyll主题
                     <div class="post-tags">
                         {% if post.tags.size > 0 %}
                             {% for tag in post.tags  %}
-                            <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
+                            <a href={{ "tags.html#" | append: tag | prepend: site.baseurl }} class="post-tag">{{ tag }}</a>
                             {% endfor %}
                         {% endif %}
                     </div>
