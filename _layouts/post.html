@@ -16,7 +16,7 @@
       <div class="post-tags">
         {% if page.tags.size > 0 %}
           {% for tag in page.tags  %}
-            <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
+            <a href="{{ "/tags.html#" | append: tag | relative_url }}" class="post-tag">{{ tag }}</a>
           {% endfor %}
         {% endif %}
       </div>
@@ -28,7 +28,7 @@
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-      <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;"></div>
+      <div class="post-cover" style="background: url('{{ page.cover | relative_url }}') center no-repeat; background-size: cover;"></div>
     {% endif %}
   </header>
 
@@ -51,7 +51,7 @@
   <section class="author-detail">
     <section class="post-footer-item author-card">
       <div class="avatar">
-        <img src="{{ site.avatar | absolute_url }}" alt="">
+        <img src="{{ site.avatar | relative_url }}" alt="">
       </div>
       <div class="author-name" rel="author">{{ site.author }}</div>
       <div class="bio">
@@ -72,28 +72,28 @@
     <section class="post-footer-item read-next">
       {% if page.next.url %}
       <div class="read-next-item">
-        <a href="{{ page.next.url }}" class="read-next-link"></a>
+        <a href="{{ page.next.url | relative_url }}" class="read-next-link"></a>
         <section>
           <span>{{ page.next.title }}</span>
           <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
         </section>
         {% if page.next.cover %}
         <div class="filter"></div>
-        <img src="{{ page.next.cover }}" alt="">
+        <img src="{{ page.next.cover | relative_url }}" alt="">
         {% endif %}
      </div>
       {% endif %}
 
       {% if page.previous.url %}
       <div class="read-next-item">
-        <a href="{{ page.previous.url }}" class="read-next-link"></a>
+        <a href="{{ page.previous.url | relative_url }}" class="read-next-link"></a>
           <section>
             <span>{{ page.previous.title }}</span>
             <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
           </section>
           {% if page.previous.cover %}
           <div class="filter"></div>
-          <img src="{{ page.previous.cover }}" alt="">
+          <img src="{{ page.previous.cover | relative_url }}" alt="">
           {% endif %}
       </div>
       {% endif %}
@@ -107,7 +107,7 @@
 
   {% include footer.html %}
 
-  <script src="/assets/js/social-share.min.js"></script>
+  <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
   <script>
     socialShare('.social-share', {
       sites: [
@@ -142,8 +142,8 @@
   </script>
   {% endif %}
 
-  <script src="/assets/js/prism.js"></script>
-  <script src="/assets/js/index.min.js"></script>
+  <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
 </body>
 
 </html>
