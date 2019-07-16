@@ -56,13 +56,12 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  weibo: '//weibo.com/lovecolcol'
-  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-  instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/kaeyleo'
+  weibo: 'https://weibo.com/6064683176/profile?rightmod=1&wvr=6&mod=personinfo'
+  zhihu: 'https://www.zhihu.com/people/jun1lesszzz/activities'
+  github: 'https://github.com/Cherubicy'
 
 # Tags 设置标签
-recommend-tags: false # whether or not display recommend-tags on the sidebar
+recommend-tags: true # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
