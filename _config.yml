@@ -21,13 +21,13 @@ nav:
 
 # Footer
 footer:
-  since: 2019.7.15
+  since: 2019-07-15
 
 # Author 配置博主信息
 author: '刘益钧'
 nickname: 'Cherubicy'
 bio: '菜鸡Oier，车万狗，爱听故事'
-avatar: 'https://cdn.luogu.org/upload/usericon/128119.png'
+avatar: ''
 
 # Search
 search: true
@@ -62,7 +62,7 @@ sns:
   github: '//github.com/kaeyleo'
 
 # Tags 设置标签
-recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-tags: false # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
