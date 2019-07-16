@@ -1,0 +1,292 @@
+---
+layout: post
+title: '进阶数论学习笔记'
+date: 2019-07-16
+author: Cherubicy
+cover: 'https://i.loli.net/2019/07/16/5d2d6dd5b317d33824.jpg'
+tags: 见闻
+--- 
+### 目录：
+- #### 质数
+    - ##### 相关概念	
+	- ##### 筛
+- #### 约数
+	- ##### 相关概念
+	- ##### 欧几里得算法求$gcd$、$lcm$
+    - ##### 扩展欧几里得
+    - ##### 约数个数与约数和
+    - ##### 裴蜀定理 
+    - ##### 欧拉函数
+- #### 模/同余
+	- ##### 相关概念
+    - ##### 费马小定理
+    - ##### 欧拉定理
+    - ##### 求解模线性方程
+    - ##### 逆元
+    - ##### 求解同余方程组
+- #### 杂
+	- ##### 矩阵
+    - ##### 高斯消元
+
+------------
+## 前言：
+- 目录xjb分的没有依据看看就行
+- 作者学自闭了更不更看心情吧不完善也就算了有锅请来~~砍~~告诉我
+
+
+
+------------
+
+## 正题：
+
+### 质数
+- ##### 唯一分解定理 ：正整数的质因数分解是唯一的
+- ##### 各种筛：如果你看到这里记得提醒菜鸡作者填坑  
+
+### 约数
+- ##### 欧几里得算法 ：$gcd(a,b) = gcd(b,a\%b)$
+	- ###### 证明 : 
+       设 : $a,b$ 的最大公约数为 $c$
+   
+       $a=nc\  ,\  b=mc$ , $(n,m \in Z)$ , $a=k\times b + r$
+  
+       $r=a\%b=a-k b=nc-kmc=(n-km)c$
+   
+       若要使 $(a,b) = (b,a\%b)$ ,
+        
+       则需要证 : $b , r$ 的最大公约数也为 $c$ ,
+   
+      $b=mc , r=(n-km)c$ 中 , $m,(n-km)$ 互质 。
+       
+       用反证法 , 设存在 $d$ 为 $m,(n-km)$ 的最大公约数，且 $d > 1$。
+       
+       设 : $n-km=qd$ , $m=pd$
+       
+        则$b = mc = pdc\ $ , 
+       
+       $\ a=kb+r=kpdc + qdc=dc(kp+q)$
+       
+       则 $a$ 还存在一个因数 $dc > c$
+       
+       此结论与$a,b$ 的最大公约数为 $c$ 相矛盾
+       
+       故不存在 $d>1$ 作为 $m,(n-km)$ 的最大公约数
+       
+       则  $m,(n-km)$互质 ，子证明成立。
+   
+      得: $b=mc , r=(n-km)c$ 中 , $m,(n-km)$ 互质 。
+   
+      则： $b$ 与 $r$ 的最大公因数仍为 $c$  
+      
+	- ##### $gcd(n,m)·lcm(n,m) = nm$
+- ##### 约数个数与约数和：
+	- ###### 对于任意数 $n$ , 求其约数的个数：$num=\sum\limits_{i=1}^n(a_i+1)$
+    
+    - 证明: 
+
+   	  先将 $n$ 质因数分解 , 得到:$n=p_1^{a1}\times p_2^{a2}\times ...$
+
+   	  则：其任意一因子p可表示为： 
+      $p=p_1^{b_1}\times p_2^{b_2}\times ... (0=<b_1<=a_1,0=<b_2<=a_2,...)$
+
+   	  根据 $b_1,b_2,...$的取值 , 则其因子个数为:    
+      $(a_1+1)\times(a_2+1)\times...$
+        
+  - ##### 对于任意数 $n$ ,求其约数和:$sum=\prod\limits _{i=1}^n\sum_{j=0}^{a_i}p_i^j$
+  
+  - 证明 : 
+    
+    同上 , 先将 $n$ 质因数分解 , 得到:$n=p_1^{a_1}\times p_2^{a_2}\times ...$
+    
+    则：其任意一因子p可表示为：   
+      $p=p_1^{b_1}\times p_2^{b_2}\times ... (0=<b_1<=a1,0=<b_2<=a_2,...)$
+      
+    根据乘法原理，可得它们的和为:   
+    $(p_1^0+p_1^1+…p_1^{a_1})(p_2^0+p_2^1+…p_2^{a_2})…(p_k^0+p_k^1+…p_k^{a_k})$
+    
+    
+- ##### 扩展欧几里得算法：简称 $exgcd$ 一般用来求解不定方程，求解线性同余方程，求解模的逆元等，这里只介绍第一种，后两种在**模/同余**中会提到
+   - ###### 证明 : 
+      - ① $ax_1+by_1=gcd(a,b)$ ② $bx_2+(a\%b)y_2=gcd(b,a\%b)$ ③ $gcd(a,b)=gcd(b,a\%b)$ . 联立①②③~~与⑨~~可以得到 
+      $$ax_1+by_1=bx_2+(a\%b)y_2$$  
+     - $a\%b=a- \left\lfloor\dfrac{a}{b}\right\rfloor b$,所以$gcd(a,b)=gcd(b,a- \left\lfloor\dfrac{a}{b}\right\rfloor b)$  
+     - 化简：   
+        $ax_1+by_1=bx_2+(a- \left\lfloor\dfrac{a}{b}\right\rfloor b)y_2$  
+        
+        $ax_1+by_1=bx_2+ay_2- \left\lfloor\dfrac{a}{b}\right\rfloor by_2$  
+         
+        $ax_1+by_1=ay_2+b(x2-\left\lfloor\dfrac{a}{b}\right\rfloor y_2)$    
+        
+     	 所以有 $x_1=y_2,y1=x2-\left\lfloor\dfrac{a}{b}\right\rfloor y_2$  ,至此，递归关系已非常明了。  
+   	 - 通解 ：通过以上方法可以得到一解 $x_0,y_0$ ,然后可得通解：$x=x_0+\dfrac{b}{gcd(a,b)}\times t,y=y_0+\dfrac{a}{gcd(a,b)}\times t,t \in Z$   
+    此时 $\dfrac{b}{gcd(a,b)},\dfrac{a}{gcd(a,b)}$ 为最小系数  
+   - ###### 求解不定方程:
+     - 对于不定方程 : $ ax + by = c $ ,根据 扩展欧几里得 :  
+       
+       - 1.若$c \% gcd(a,b) \not= 0 $ , 则原方程无解
+       
+         2.若$ c \%gcd(a,b) = 0$   
+       
+         设$d = gcd(a,b)$ , 则原方程可转化为 :
+	       $a\times (x\times \frac{d}{c}) + b\times (y\times \frac{d}{c}) =d (= c\times \dfrac{d}{c})$  
+         用 $exgcd$ 可以求出当 $ax+by=d$ 时的解，再使 $x,y$ 分别乘上$\dfrac{d}{c}$ , 即可得到原方程 $ax + by = c$ 的解
+- ##### 裴蜀定理 / 关于线性不定方程：对任何 $a,b\in Z$ 和它们的最大公约数$d$，关于未知数$x$和$y$的线性不定方程（称为裴蜀等式）：$ax+by=c$有整数解$(x,y)$当且仅当$d∣c$，可知有无穷多解。特别地，一定存在整数$(x,y)$，使$ax+by=d$成立。 
+	- ###### 推论 ：$a,b$ 互质的充要条件是存在整数$x,y$使$ax+by=1$
+    	- ###### 推论证明 ：$ax+by=d$ 的条件是 $gcd(a,b)\mid d$ ,当 $d = 1$ 时，$1$ 的约数有且只有 $1$ ,即 $1$ 只整除 $1$, 所以 $gcd(a,b)$ 只能等于 $1$,即   $a,b$ 互质    
+- ##### 欧拉函数
+   - ###### 定义：对于正整数 $n$，满足 $ a\perp n $ 的 a 的个数 $(a < n)$，即为 $n$ 的欧拉函数的值。也称作 $\Phi \  $函数。
+      例 ： $\Phi (8) = 4$ ( $8$ 的互质数为 : $1,3,5,7$ )
+  
+      特别地，$\Phi (1) = 1$
+  
+  - ##### 一些性质：
+  
+    1.  若 $n$ 为质数则 $\Phi (n) = n-1$ .
+	
+    2.  欧拉函数是积性函数——若 $m \perp n$，则 $\Phi (mn) = \Phi(m) \times \Phi(n) $。   
+    
+	3.  当 $n$ 为奇质数时，$\Phi(2n) = n$ , 证明与上述类似。
+    
+    4. 如果 $p$ 为质数 , 则有:
+    
+       $\Phi (p^a) = p^a(1-\frac{1}{p})$
+   
+       - 证明: 
+       
+         比 $p^a$ 小的数有 $p^a-1$ 个  
+         其中与 $p^a$ 不互质的数 , 一定是 $p$ 的倍数  
+         $p$ 的倍数可以这样表示 : $tp ,t \in [1\ ,\ p^{a-1}-1]$ , 故有 $p^{a-1}-1$ 个数
+        
+         则与 $p$ 互质的数的个数为: 
+         
+         $\Phi (p^a)$  
+         
+         $=(p^a-1) - (p^{a-1}-1)$   
+         
+         $= p^a-p^{a-1}$    
+         
+         $=p^{a-1}(p-1)$  
+         
+         $= p^a(1-\frac{1}{p})$
+    
+    5. 对于任意大于 $1$ 的正整数 $n$ ，有：
+      
+       $\Phi (n) = n \times \prod\limits_{i=1}^{n}  (1-\frac{1}{p_i}) $
+      
+       - 证明:
+       
+         先将 $n$ 进行质因数分解：  
+         $n=P^{c1}_1\times P^{c2}_2 \times ...\times  P^{cm}_m$  
+         
+         由性质 $4$ , 可得 :   
+         $\Phi (p^{c1}_1) = p^{c1}_1(1-\frac{1}{p_1})$ , $\Phi (p^{c2}_2) = p^{c2}_2(1-\frac{1}{p_2})$  
+         
+          又因为性质 $2$ , 欧拉函数是积性函数 , 得:  
+          $\Phi(n)$  
+          $=\Phi(P^{c1}_1\times P^{c2}_2 \times ...\times  P^{cm}_m)$  
+          
+          $=\Phi (p^{c1}_1)\times\Phi (p^{c2}_2)\times ... \times \Phi (p^{cm}_m)$  
+          
+          $=p^{c1}_1(1-\frac{1}{p_1})\times p^{c2}_2(1-\frac{1}{p_2})\times ...\times p^{cm}_m(1-\frac{1}{p_m})$ 
+          
+          $=(p^{c1}_1\times p^{c2}_2\times ...\times p^{cm}_m)\times (1-\frac{1}{p_1})(1-\frac{1}{p_2})...(1-\frac{1}{p_m})$  
+          $=n \times \prod\limits_{i=1}^{m}  (1-\frac{1}{p_i})$
+         
+         原式得证 。
+  
+
+### 模/同余
+- ##### 随时取模：$(a+b)\%p = (a\%p+b$ % $p)\%p$  _（乘法同理）_ 
+- ##### 二次探测定理：若 $p$ 为质数 , 且 $x^2 \equiv 1(mod\;p)$ ,那么$x \equiv 1 (\mod p)$ 和 $x \equiv p-1(\mod p) $ 中的一个成立。 
+- ##### 剩余类：把$r\mod m$称为模$m$的一个剩余类，除以$m$后余数相等的记为一类，同余同类，不同余不同类
+- ##### 完全剩余系：模某个数意义下所有剩余类的集合
+- ##### 费马小定理及其证明： $n^ {p-1} \equiv1(mod\;p),p$为质数
+	- 证明：因为$p$是质数，所以$\%p$的完全剩余系为$1,2,3...p-1$,因为$gcd(a,p)=1$，所以$a,2a,3a...(p-1)a$也是$\%p$的完全剩余系， 所以有：$1\times2\times3\times...\times(p-1)\equiv a\times2a\times3a\times...\times(p-1)a (mod\;p)$  故$(p-1)!\equiv (p-1)! * a^{p-1}(mod\;p)$    
+    两边同除$(p-1)!$可得$a^{p-1}\equiv 1(mod\;p)$
+    
+- ##### 欧拉定理：
+  对于两个互质的数 $a$ 和 $p(p ≥ 2)$，有 $a ^{\Phi(p)} ≡ 1 \ \pmod  p$ 。
+    
+   - 证明：
+       
+        设集合 $N=\{x_1,x_2,... ,x_{\Phi(p)}\}$ 为 $\Phi(p)$ 个小于 $p$ 且与 $p$ 互质的数,  
+        $M=\{ax_1,ax_2,... ,ax_{\Phi(p)}\}$
+       
+        可证:  任取$ax_s,ax_r \in M$ ,$\pmod p$ 下都不同余
+ 		- 子证明：
+        
+          用反证法，假设：$ax_s \equiv ax_r \pmod p$
+           
+          则有 : $p\mid (x_s-x_r)a$ ，  
+          即:$(x_s-x_r)a=np \ (n\in Z)$  
+     	  因为$a\bot p$,所以$lcm(a,p)=a*p$,所以当且仅当$p|(x_s-x_r)$时成立，而$(x_s-x_r) < p$,所以不可能成立
+         
+          则 : 与 $p\mid (x_s-x_r)$ 相矛盾  
+          故不成立，原式得证 。
+           
+       则 : 集合 $M$ 中任意两元素 ， 在 $\pmod p$ 下，都不同余 。 
+       
+       则:  $N=x_1  ,\  x_2\ ,\ ...\ ,\ x_{\Phi(p)}$,  
+        在 $\pmod p$下，  
+        与:  $M=ax_1\ ,\ ax_2,\ ...\  ,\ ax_{\Phi(p)}$ 有映射相等关系 . 
+       
+        则 :  $\large \prod\limits_{i\in N} \equiv \prod\limits_{j\in M} \pmod p$
+      
+        即 :   
+        $x_1\times\ ...\ \times x_{\Phi(p)} \equiv ax_1\times\ ...\ \times ax_{\Phi(p)} \pmod p$   
+	    $x_1\times\ ...\ \times x_{\Phi(p)} \equiv (x_1\times\ ...\ \times x_{\Phi(p)})a^{\Phi(p)} \pmod p$  
+       
+        同除 $x_1\times\ ...\ \times x_{\Phi(p)}$,得:  
+       
+        $a ^{\Phi(p)} ≡ 1 \ \pmod  p$
+ 
+- ##### 求解模线性方程
+	 - $ax \equiv b (mod\;c)$ 可化作不定方程形式，然后按求不定方程的方法求解：
+          - 由同余方程可得 $ax\%c=b\%c$  
+            $ax-b=cy,y\in Z $  
+            $ax=cy+b,y\in Z$  
+            $ax\pm cy=b=k*gcd(a,b),k\in Z$  
+          至此可以用 $exgcd$ 求解  
+- ##### 逆元 ：$x·inv(x) \equiv1(mod\;p)$ 
+	- 当且仅当$p$为质数时，根据费马小定理 ,可得 :   
+ $$inv(x)·x \equiv x^{p-1}(mod\;p)$$  
+
+	    所以 ： 
+    
+  $$inv(x)\equiv x^{p-2}(mod\;p)$$   
+ 
+   - 证明: 移项得：$x^2-1 \equiv 0(mod \; p)$，根据平方差公式可得:$(x+1)(x-1) \equiv 0(mod\;p)$,所以$(x+1)|p$ 或 $(x-1)|p$
+
+   - ###### 求解模的逆元  
+      - 扩欧法：由基础知识可知关于 $x$ 和它的逆元 $inv(x)$ 在$mod\ b$ 意义下的关系：$x·inv(x)\equiv 1(mod\;b )$,可近似的看作一个同余方程求解  
+      - 费马小定理法：需要用到快速幂  
+      
+      - 递推法：
+         -  设$p=k\times i+r$  
+        
+        	    因为$p\equiv0(mod\;p)$，所以$k\times i+r \equiv 0(mod\;p)$  
+            
+                方程两边同乘$(inv(i)\times inv(r))$  
+            
+                可得：$k\times i \times inv(i)\times(inv(r)+r\times inv(i)\times inv(r) \equiv 0(mod\;p)$  
+                $k\times inv(r)+inv(i)\equiv 0(mod\;p)$  
+            
+                $inv(i)\equiv-k\times inv(r)\;(mod\;p)$  
+                $inv(i)\equiv -\left\lfloor\dfrac{p}{i}\right\rfloor\times inv(p\%i)\;(mod\;p)$  
+            
+                至此，递推关系明了，设置边界$inv(1)=1$,并且为了保证为正整数解，则需要再加上$p$,因为最后要$\%p$，所以可以保证正确性  
+          
+                关系式：$inv[i]=(p-p/i)*inv[p\%i]\%p$
+           
+      
+      - 阶乘法：$inv(i)=\dfrac{1}{i!}*(i-1)!$
+
+- ##### 求解同余方程组
+    - 只说一下$exgcd$合并同余方程的做法吧 ~~CRT真难用~~
+    	
+    	- 现在有这样一个方程组： 
+          $\begin{cases}x\equiv a_1(mod\;m_1)\\x\equiv a_2(mod\;m_2)\\x\equiv a_3(mod\;m_3)\end{cases}$ 
+        - 假设现在要求第$k$个方程的解，而现在已经得到了前$k-1$个方程的解$ans$，设$M=\prod\limits_{i=1}^{k-1}m_i$,则前$i-1$个方程通解为$kM+ans,k\in Z$，然后将通解代入第$i$个方程，得到$k$满足第$i$个方程
+    
+### 杂
+作者死了
