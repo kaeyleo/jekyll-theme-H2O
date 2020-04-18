@@ -1,4 +1,4 @@
-# ID：陈禹诺
+
 ## 题目名
 <h2>level1_shellcode</h2>
 ### 漏洞分析
