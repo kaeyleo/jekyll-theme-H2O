@@ -21,7 +21,7 @@ nav:
 
 # Footer
 footer:
-  since: 2017
+  since:2020
 
 # Author 配置博主信息
 author: 'chenyu'
@@ -56,9 +56,6 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  
-
-  
   github: '//github.com/ chenyu3050-byte '
 
 # Tags 设置标签
